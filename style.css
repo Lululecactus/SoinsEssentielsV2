@@ -1,0 +1,124 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* NAV BAR */
+
+.nav-bar {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:
+        inset 0 4px 12px rgba(255, 255, 255, 0.4),
+        inset 2px -6px 5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-bar__branding {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__main-menu,
+.nav-bar__sub-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar__main-menu a,
+.nav-bar__sub-menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+}
+
+.nav-bar__main-menu a:hover,
+.nav-bar__sub-menu a:hover {
+    background-color: #E38833;
+    box-shadow:
+        inset 2px 4px 6px rgba(255, 255, 255, 0.4),
+        inset -2px -4px 6px rgba(0, 0, 0, 0.2),
+        0 8px 20px rgba(227, 136, 51, 0.15),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #fff;
+    border-radius: 50px;
+}
+
+.nav-bar__main-menu--active{
+    border: solid 2px #E38833;
+    border-radius: 15px;
+}
+
+.nav-bar__main-menu--active:hover{
+    border-color: transparent;
+}
+
+
+.nav-bar__sub-menu {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    position: fixed;
+    margin: 8px;
+    right: 50px;
+    border-radius: 20px;
+    background: #ded2c8d4;
+    box-shadow:
+        inset 2px 4px 6px rgba(255, 255, 255, 0.4),
+        inset -2px -4px 6px rgba(0, 0, 0, 0.2),
+        0 8px 20px rgba(227, 136, 51, 0.15),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.nav-bar__sub-menu:hover{
+    display: flex;
+
+}
+
+.nav-bar__sub-menu li{
+    padding: 10px;
+}
+
+.nav-bar__main-menu li:hover .nav-bar__sub-menu{
+    display:flex ;
+}
