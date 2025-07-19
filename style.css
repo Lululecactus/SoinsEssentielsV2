@@ -27,6 +27,11 @@ span {
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 
@@ -134,16 +139,16 @@ span {
 }
 
 .hero-banner__image {
-  grid-column: 1 / -1;
-  grid-row: 1;
+    grid-column: 1 / -1;
+    grid-row: 1;
 }
 
 .hero-banner__image img {
-  object-fit: contain;
-  height: 100vh;
-  width: 100%;
-  padding-top: 10vh;
-  display: block;
+    object-fit: contain;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    display: block;
 }
 
 
@@ -174,7 +179,6 @@ span {
     grid-column: 1 / 12;
     grid-row: 1;
     align-self: end;
-
     display: grid;
     grid-template-rows: repeat(24, 1fr);
     align-items: center;
@@ -209,7 +213,7 @@ span {
 
 }
 
-.hero-banner__first-card{
+.hero-banner__first-card {
     text-align: center;
     grid-row-start: 8;
     font-weight: 500;
@@ -219,7 +223,7 @@ span {
 
 }
 
-.hero-banner__second-card{
+.hero-banner__second-card {
     text-align: center;
     grid-row-start: 19;
     font-weight: 500;
@@ -232,6 +236,7 @@ span {
         opacity: 0.2;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -241,4 +246,77 @@ span {
 .hero-banner__first-card,
 .hero-banner__second-card {
     animation: slideInLeft 0.8s ease-out forwards;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-banner__title {
+
+        grid-column: 1 / 12;
+        grid-row: 1;
+        z-index: 2;
+        justify-self: end;
+        text-align: center;
+        align-self: center;
+        background-color: transparent;
+    }
+
+    .hero-banner__cards-container {
+        height: auto;
+        grid-column: 1 / -1;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(24, 1fr);
+    }
+
+    .hero-banner__card {
+        border-radius: 20px 20px 0 0;
+        width: 300px;
+        height: 200px;
+    }
+
+    .hero-banner__first-card {
+        grid-column-start: 4;
+        font-size: 32px;
+        padding: 15px;
+        grid-row-start: 1;
+    }
+
+    .hero-banner__second-card {
+        grid-column-start: 20;
+        font-size: 32px;
+        padding: 15px;
+        grid-row-start: 1;
+    }
+
+    @keyframes slideInLeft {
+    from {
+        opacity: 0.2;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-banner__title h1{
+        font-size: 2.3em;
+    }
+
+    .hero-banner__card{
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .hero-banner__title h1{
+        font-size: 3.1em;
+    }
+
+    .hero-banner__card{
+        font-size: 1.3em;
+    }
 }
