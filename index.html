@@ -94,17 +94,41 @@
         </div>
       </div>
     </header>
+    <section class="section1">
+      <h2>
+        Soins Essentiels : La clé de votre équilibre intérieur et bien-être.
+      </h2>
+      <div class="section1__content">
+        <picture class="section1__image">
+          <source
+            srcset="./Images/Desktop/section1.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source srcset="Images/Mobile/section1.webp" type="image/webp" />
+          <img src="./Images/Desktop/section1.webp" alt="#" />
+        </picture>
+        <div class="section1__body">
+          <p>
+            Bienvenue chez Soins Essentiels Votre espace de bien-être,
+            d'harmonisation et de reconnexion à l'essentiel. Je suis <span>Marilyn
+            Kulpa</span>, thérapeute énergéticienne. Je vous accompagne à travers des
+            soins en <span>magnétisme, lithothérapie, sonothérapie et Feng Shui,</span> pour
+            réharmoniser vos énergies, apaiser le mental et revitaliser votre
+            corps comme votre espace de vie.Un accompagnement global pour
+            retrouver équilibre, sérénité et alignement.
+          </p>
+        </div>
+      </div>
+      <img src="./Images/Mobile/flowersection1mobile.png" alt="#">
+    </section>
   </body>
   <script>
-  const burgerMenu = document.getElementById('burger-menu');
-  const body = document.body;
+    const burgerMenu = document.getElementById("burger-menu");
+    const body = document.body;
 
-  burgerMenu.addEventListener('click', () => {
-    body.classList.toggle('menu-open');
-  });
-</script>
-
-
-
-
+    burgerMenu.addEventListener("click", () => {
+      body.classList.toggle("menu-open");
+    });
+  </script>
 </html>
