@@ -388,4 +388,15 @@ a {
         top: 55px;
         background: #ded2c8f8;
     }
+
+    .nav-bar__sub-menu a {
+        display: block;
+        padding: 8px 0;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0px;
+    }
+
+
+
 }
