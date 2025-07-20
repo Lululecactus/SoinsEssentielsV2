@@ -40,7 +40,7 @@
           <ul class="nav-bar__main-menu">
             <li class="nav-bar__main-menu--active"><a href="#">Accueil</a></li>
             <li>
-              <a href="#">Les Soins</a>
+              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
               <ul class="nav-bar__sub-menu">
                 <li><a href="#">Soin Énergétique</a></li>
                 <li><a href="#">Séance de Lithothérapie</a></li>
@@ -95,4 +95,16 @@
       </div>
     </header>
   </body>
+  <script>
+  const burgerMenu = document.getElementById('burger-menu');
+  const body = document.body;
+
+  burgerMenu.addEventListener('click', () => {
+    body.classList.toggle('menu-open');
+  });
+</script>
+
+
+
+
 </html>
