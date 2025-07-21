@@ -607,3 +607,19 @@ h2 {
     font-weight: 600;
 
 }
+
+/* SECTION 3 RESPONSIVE */
+/* RESPONSIVE GENERALE */
+@media screen and (min-width: 768px) {
+
+
+    .section3__body{
+        width: 70%;
+        background-color: transparent;
+    }
+
+    .section3__body h2{
+        text-align: center;
+        margin-bottom: 4em;
+    }
+}
