@@ -681,7 +681,7 @@ h2 {
 /* la wave est un vrai élément frère, positionné par-dessus */
 .wave-overlay {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     aspect-ratio: 400 / 90; /* adapte au ratio réel de ta wave */
@@ -732,6 +732,7 @@ h2 {
     border-radius: 35px;
     margin-left: 15px;
     cursor: pointer;
+    color: #000;
 
 }
 
