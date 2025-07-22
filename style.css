@@ -649,7 +649,7 @@ h2 {
 
 .section4__cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 40px;
     row-gap: 150px;
     /* padding: 15px; */
