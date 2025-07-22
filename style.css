@@ -632,7 +632,7 @@ h2 {
 /* SECTION 4 */
 
 
-.section4{
+.section4 {
     position: relative;
     background-color: #F4E5DB;
     padding: 300px 15px 15px 15px;
@@ -642,14 +642,15 @@ h2 {
 
 }
 
-.section4 h2{
+.section4 h2 {
     text-align: center;
     margin-bottom: 2.5em;
 }
 
 .section4__cards-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
     row-gap: 150px;
     /* padding: 15px; */
 
@@ -662,23 +663,35 @@ h2 {
     justify-content: space-between;
 }
 
+
+
 .section4__card-head {
     position: relative;
-    margin-bottom: 25px;
-
+    overflow: hidden;
 }
 
-.section4__card-wave {
+/* image normale */
+.section4__card-image img {
+    display: block;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+
+/* la wave est un vrai élément frère, positionné par-dessus */
+.wave-overlay {
     position: absolute;
     bottom: 0;
-}
-
-.section4__card-image img{
-    border-radius: 30px 30px 0 0;
+    left: 0;
     width: 100%;
-    object-fit: cover;
-
+    aspect-ratio: 400 / 90; /* adapte au ratio réel de ta wave */
+    background: url('./Images/Desktop/wavecards.svg') no-repeat bottom center;
+    background-size: cover;
+    z-index: 5;
+    pointer-events: none;
 }
+
+
 
 .section4__card-body {
     width: 100%;
