@@ -40,7 +40,8 @@ h1 {
 
 h2 {
     font-size: 1.5em;
-    font-family: Playfair Display SC, serif
+    font-family: Playfair Display SC, serif;
+    margin-bottom: 2.5em;
 }
 
 
@@ -142,6 +143,7 @@ h2 {
 }
 
 .hero-banner {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     align-items: center;
@@ -166,7 +168,6 @@ h2 {
 
 .hero-banner__title {
     grid-column: 1 / -1;
-    /* span full width so it can be centered */
     grid-row: 1;
     z-index: 2;
     justify-self: center;
@@ -241,6 +242,15 @@ h2 {
     font-size: 0.8em;
 }
 
+.hero-banner__card--small {
+    font-size: 0.2em;
+    font-style: italic;
+    text-align: start;
+    position: absolute;
+    bottom: -135%;
+    left: 25px;
+}
+
 
 /* Animations hero-banner */
 
@@ -300,6 +310,11 @@ h2 {
         font-size: 32px;
         padding: 15px;
         grid-row-start: 1;
+    }
+
+    .hero-banner__card--small {
+        bottom: 10px;
+        left: 0;
     }
 
     #burger-menu {
@@ -537,7 +552,6 @@ h2 {
 
 .section2 h2 {
     font-size: 1.4em;
-    margin-bottom: 2.5em;
 }
 
 .section2__flower {
@@ -598,9 +612,7 @@ h2 {
 
 }
 
-.section3__body h2 {
-    margin-bottom: 2.5em;
-}
+
 
 .section3__body h3 {
     margin-top: 1.7em;
@@ -613,6 +625,9 @@ h2 {
 /* SECTION 3 RESPONSIVE */
 /* RESPONSIVE GENERALE */
 @media screen and (min-width: 768px) {
+    .section3 {
+        border-radius: 0 0 500px 500px;
+    }
 
 
     .section3__body {
@@ -635,8 +650,8 @@ h2 {
 .section4 {
     position: relative;
     background-color: #F4E5DB;
-    padding: 300px 15px 15px 15px;
-    margin-top: -200px;
+    padding: 600px 15px 15px 15px;
+    margin-top: -500px;
     border-radius: 0px 0px 200px 200px;
 
 
@@ -644,7 +659,6 @@ h2 {
 
 .section4 h2 {
     text-align: center;
-    margin-bottom: 2.5em;
 }
 
 .section4__cards-container {
@@ -744,6 +758,7 @@ h2 {
     margin-left: 15px;
     cursor: pointer;
     color: #000;
+    font-weight: 500;
 
 }
 
@@ -759,3 +774,17 @@ h2 {
     color: #fff;
 
 }
+
+/* SECTION 4 RESPONSIVE */
+/* RESPONSIVE GENERALE */
+
+@media screen and (min-width: 768px) {
+    .section4 {
+        border-radius: 0 0 500px 500px;
+
+    }
+
+    .section4__cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+    }
