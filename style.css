@@ -448,6 +448,8 @@ h2 {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+
+
 .section1__body {
     background-color: #EBCFBD;
     border-radius: 25px;
@@ -844,8 +846,21 @@ h2 {
     font-weight: 500;
 }
 
+.section5 button:hover {
+    background-color: #E38833;
+    box-shadow:
+        inset 2px 4px 6px rgba(255, 255, 255, 0.4),
+        inset -2px -4px 6px rgba(0, 0, 0, 0.2),
+        0 8px 20px rgba(227, 136, 51, 0.15),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #fff;
 
-.flower-top{
+}
+
+
+.section5__flower-top{
   grid-row-start: 2;
   margin-bottom: -140px;
   align-self: self-start;
@@ -859,7 +874,7 @@ h2 {
 }
 
 
-.flower-bottom{
+.section5__flower-bottom{
   grid-row-start: -1;
   grid-column-start:1;
   grid-column-end:-1;
@@ -873,4 +888,36 @@ h2 {
 .section5 h2{
     grid-column: 1/-1;
     text-align: center;
+}
+
+
+.section5__button{
+    display: flex;
+    justify-content: flex-end;
+}
+/* SECTION 5 RESPONSIVE */
+/* RESPONSIVE GENERALe */
+
+
+@media screen and (min-width: 768px) {
+
+    .section5__content{
+        grid-column: 3/23;
+    }
+
+    .section5__body{
+        padding: 150px 50px 50px  50px;
+    }
+
+    .section5__flower-bottom{
+        grid-column: 5/-1;
+        transform: translateX(-40px);
+    }
+
+    .section5__flower-top{
+        grid-column-start:5;
+        grid-column-end:-1;
+        transform: rotate(180deg) translateX(40px);
+
+    }
 }
