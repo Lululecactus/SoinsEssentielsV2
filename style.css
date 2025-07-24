@@ -982,14 +982,13 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer__menu h4,
-.footer__contact h4 {
+.footer__menu h3,
+.footer__contact h3 {
     font-size: 18px;
     margin-bottom: 12px;
     border-bottom: 2px solid #f39c12;
     /* Orange plus clair pour meilleur contraste */
     padding-bottom: 5px;
-    text-align: center;
 }
 
 .footer__menu ul {
@@ -1047,6 +1046,9 @@ footer {
     margin: 0 auto;
     max-width: 100%;
 
+}
+.fa-map-location-dot{
+    color: #fff;
 }
 
 /* Dès 768px et plus, on passe en desktop avec flex horizontal */
