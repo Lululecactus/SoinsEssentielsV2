@@ -1004,11 +1004,15 @@ footer {
 .footer__copyright {
     font-size: 14px;
     color: #d1d5da;
+    text-align: center;
     /* Gris clair pour meilleur contraste */
     border-top: 1px solid #666;
     /* Bordure plus visible */
     padding-top: 15px;
-    text-align: center;
+
+    margin: 0 auto;
+    max-width: 100%;
+
 }
 
 /* Dès 768px et plus, on passe en desktop avec flex horizontal */
