@@ -102,6 +102,17 @@ h2 {
     border-radius: 50px;
 }
 
+.nav-bar__main-menu a:active,
+.nav-bar__sub-menu a:active {
+    transform: scale(0.95); /* Slightly shrink the button */
+    box-shadow:
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3), /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2); /* Reduced highlight */
+    background-color: #d17a2e; /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px); /* Slightly reduced blur for realism */
+    -webkit-backdrop-filter: blur(10px);
+}
+
 .nav-bar__main-menu--active {
     border: solid 2px #E38833;
     border-radius: 15px;
@@ -750,9 +761,9 @@ h2 {
 
 }
 
-.section4__card-footer button {
+.button-like {
     background-color: #E38833;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     margin-top: 15px;
     border: none;
     padding: 15px 20px;
@@ -760,11 +771,15 @@ h2 {
     margin-left: 15px;
     cursor: pointer;
     color: #000;
-    font-weight: 500;
-
+    font-weight: 500; /* Identique au button */
+    font-size: 16px; /* Ajouté pour correspondre à la taille de police par défaut du button */
+    line-height: 1; /* Assure un espacement vertical identique */
+    display: inline-block; /* Nécessaire pour que le span se comporte comme un bouton */
+    text-align: center;
+    box-sizing: border-box; /* Assure que le padding est calculé de la même manière */
 }
 
-.section4__card-footer button:hover {
+.button-like:hover {
     background-color: #E38833;
     box-shadow:
         inset 2px 4px 6px rgba(255, 255, 255, 0.4),
@@ -774,7 +789,16 @@ h2 {
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     color: #fff;
+}
 
+.button-like:active {
+    transform: scale(0.95); /* Slightly shrink the button */
+    box-shadow:
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3), /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2); /* Reduced highlight */
+    background-color: #d17a2e; /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px); /* Slightly reduced blur for realism */
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* SECTION 4 RESPONSIVE */
@@ -857,6 +881,16 @@ h2 {
     -webkit-backdrop-filter: blur(14px);
     color: #fff;
 
+}
+
+.section5 button:active {
+    transform: scale(0.95); /* Slightly shrink the button */
+    box-shadow:
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3), /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2); /* Reduced highlight */
+    background-color: #d17a2e; /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px); /* Slightly reduced blur for realism */
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
