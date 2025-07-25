@@ -75,6 +75,12 @@ h2 {
     align-items: center;
 }
 
+.nav-bar__branding img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+}
+
 .nav-bar__main-menu,
 .nav-bar__sub-menu {
     display: flex;
@@ -104,12 +110,17 @@ h2 {
 
 .nav-bar__main-menu a:active,
 .nav-bar__sub-menu a:active {
-    transform: scale(0.95); /* Slightly shrink the button */
+    transform: scale(0.95);
+    /* Slightly shrink the button */
     box-shadow:
-        inset 2px 4px 8px rgba(0, 0, 0, 0.3), /* Deeper inset shadow for pressed effect */
-        inset -2px -4px 8px rgba(255, 255, 255, 0.2); /* Reduced highlight */
-    background-color: #d17a2e; /* Slightly darker shade for pressed state */
-    backdrop-filter: blur(10px); /* Slightly reduced blur for realism */
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    /* Reduced highlight */
+    background-color: #d17a2e;
+    /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px);
+    /* Slightly reduced blur for realism */
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -771,12 +782,17 @@ h2 {
     margin-left: 15px;
     cursor: pointer;
     color: #000;
-    font-weight: 500; /* Identique au button */
-    font-size: 16px; /* Ajouté pour correspondre à la taille de police par défaut du button */
-    line-height: 1; /* Assure un espacement vertical identique */
-    display: inline-block; /* Nécessaire pour que le span se comporte comme un bouton */
+    font-weight: 500;
+    /* Identique au button */
+    font-size: 16px;
+    /* Ajouté pour correspondre à la taille de police par défaut du button */
+    line-height: 1;
+    /* Assure un espacement vertical identique */
+    display: inline-block;
+    /* Nécessaire pour que le span se comporte comme un bouton */
     text-align: center;
-    box-sizing: border-box; /* Assure que le padding est calculé de la même manière */
+    box-sizing: border-box;
+    /* Assure que le padding est calculé de la même manière */
 }
 
 .button-like:hover {
@@ -792,12 +808,17 @@ h2 {
 }
 
 .button-like:active {
-    transform: scale(0.95); /* Slightly shrink the button */
+    transform: scale(0.95);
+    /* Slightly shrink the button */
     box-shadow:
-        inset 2px 4px 8px rgba(0, 0, 0, 0.3), /* Deeper inset shadow for pressed effect */
-        inset -2px -4px 8px rgba(255, 255, 255, 0.2); /* Reduced highlight */
-    background-color: #d17a2e; /* Slightly darker shade for pressed state */
-    backdrop-filter: blur(10px); /* Slightly reduced blur for realism */
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    /* Reduced highlight */
+    background-color: #d17a2e;
+    /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px);
+    /* Slightly reduced blur for realism */
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -884,12 +905,17 @@ h2 {
 }
 
 .section5 button:active {
-    transform: scale(0.95); /* Slightly shrink the button */
+    transform: scale(0.95);
+    /* Slightly shrink the button */
     box-shadow:
-        inset 2px 4px 8px rgba(0, 0, 0, 0.3), /* Deeper inset shadow for pressed effect */
-        inset -2px -4px 8px rgba(255, 255, 255, 0.2); /* Reduced highlight */
-    background-color: #d17a2e; /* Slightly darker shade for pressed state */
-    backdrop-filter: blur(10px); /* Slightly reduced blur for realism */
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    /* Reduced highlight */
+    background-color: #d17a2e;
+    /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px);
+    /* Slightly reduced blur for realism */
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -1047,7 +1073,8 @@ footer {
     max-width: 100%;
 
 }
-.fa-map-location-dot{
+
+.fa-map-location-dot {
     color: #fff;
 }
 
