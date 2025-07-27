@@ -1117,7 +1117,7 @@ footer {
 
 
 /* PAGE SOINS ENERGETIQUE */
-
+/* HEADER PAGE SOINS  */
 .soins-hero-banner {
     position: relative;
     display: grid;
@@ -1127,7 +1127,6 @@ footer {
     align-items: center;
     width: 100%;
     padding-top: 8vh;
-    position: relative;
     /* Needed for wave overlay */
     overflow: hidden;
 }
@@ -1148,14 +1147,50 @@ footer {
 }
 
 .soins-hero-banner-title {
+    position: relative; /* nécessaire pour le reflet */
     grid-column: 1 / -1;
     grid-row: 1;
     z-index: 2;
     justify-self: center;
-    align-self: self-start;
-    margin-top: 5vh;
+    align-self: center;
+    /* margin-top: 10vh; */
     text-align: center;
     font-size: 2em;
+    width: 100%;
+    box-shadow:
+        inset 0 4px 12px rgba(255, 255, 255, 0.4),
+        inset 2px -6px 5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+/* Reflet lumineux doré */
+.soins-hero-banner-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255, 255, 254, 0.312) 50%,
+        transparent 100%
+    );
+    transform: skewX(100deg);
+    animation: shine 5s infinite ease-in-out ;
+    z-index: 3;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 
 .soins-wave-overlay {
@@ -1170,7 +1205,16 @@ footer {
     pointer-events: none;
 }
 
-.soins-section1{
+.soins-section1 {
     background-color: #F4E5DB;
     height: 50vh;
+}
+
+/* RESPONSIVE HEADER PAGE SOINS */
+
+@media screen and (min-width: 768px) {
+    .soins-hero-banner-title {
+        font-size: 3em;
+        margin-bottom: 10vh;
+    }
 }
