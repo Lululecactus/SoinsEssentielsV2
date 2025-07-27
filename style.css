@@ -1109,3 +1109,68 @@ footer {
         text-align: left;
     }
 }
+
+
+/* --------------------------- */
+/* FIN DE LA PAGE D'ACCEUIL */
+/* -------------------------- */
+
+
+/* PAGE SOINS ENERGETIQUE */
+
+.soins-hero-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 70vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 8vh;
+    position: relative;
+    /* Needed for wave overlay */
+    overflow: hidden;
+}
+
+.soins-hero-banner picture {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.soins-hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 35% 55%;
+}
+
+.soins-hero-banner-title {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    z-index: 2;
+    justify-self: center;
+    align-self: self-start;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2em;
+}
+
+.soins-wave-overlay {
+    position: absolute;
+    bottom: -0.1vh;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1000/ 200;
+    background: url('./Images/Desktop/wavesoins.svg') no-repeat bottom center;
+    background-size: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.soins-section1{
+    background-color: #F4E5DB;
+    height: 50vh;
+}
