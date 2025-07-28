@@ -31,59 +31,124 @@
     />
   </head>
   <body>
-  <header>
-    <div class="nav-bar">
-      <div class="nav-bar__branding">
-        <a href="./index.html">
-          <img
-          src="./Images/Mobile/lgog1.png"
-          alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
-        />
-        </a>
-        <a href="./index.html">
-          <p>Soins Essentiels</p>
-        </a>
+    <header>
+      <div class="nav-bar">
+        <div class="nav-bar__branding">
+          <a href="./index.html">
+            <img
+              src="./Images/Mobile/lgog1.png"
+              alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
+            />
+          </a>
+          <a href="./index.html">
+            <p>Soins Essentiels</p>
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-bar__main-menu">
+            <li><a href="./index.html">Accueil</a></li>
+            <li>
+              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="nav-bar__sub-menu">
+                <li>
+                  <a
+                    href="./soin-energetique.html"
+                    class="nav-bar__main-menu--active"
+                    >Soin Énergétique</a
+                  >
+                </li>
+                <li><a href="#">Séance de Lithothérapie</a></li>
+                <li>
+                  <a href="#">Massage Sonore aux Bols Chantants Tibétains</a>
+                </li>
+                <li><a href="#">Voyage Sonore</a></li>
+                <li><a href="#">Purification de Lieux</a></li>
+                <li><a href="#">Conseils en Feng-Shui</a></li>
+              </ul>
+            </li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact & Tarifs</a></li>
+          </ul>
+          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+        </nav>
       </div>
-      <nav>
-        <ul class="nav-bar__main-menu">
-          <li><a href="./index.html">Accueil</a></li>
-          <li>
-            <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-            <ul class="nav-bar__sub-menu">
-              <li><a href="./soin-energetique.html" class="nav-bar__main-menu--active">Soin Énergétique</a></li>
-              <li><a href="#">Séance de Lithothérapie</a></li>
-              <li><a href="#">Massage Sonore aux Bols Chantants Tibétains</a></li>
-              <li><a href="#">Voyage Sonore</a></li>
-              <li><a href="#">Purification de Lieux</a></li>
-              <li><a href="#">Conseils en Feng-Shui</a></li>
-            </ul>
-          </li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Contact & Tarifs</a></li>
-        </ul>
-        <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-      </nav>
-    </div>
 
-    <div class="soins-hero-banner">
-      <picture>
-        <source
-          srcset="./Images/Desktop/soinenergetiqueheader.webp"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source srcset="Images/Mobile/energyhealingcard.webp" type="image/webp" />
-        <img
-          src="./Images/Mobile/energyhealingcard.webp"
-          alt="Marilyn Kulpa soin énergétique La Riche"
-        />
-      </picture>
+      <div class="soins-hero-banner">
+        <picture>
+          <source
+            srcset="./Images/Desktop/soinenergetiqueheader.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="Images/Mobile/energyhealingcard.webp"
+            type="image/webp"
+          />
+          <img
+            src="./Images/Mobile/energyhealingcard.webp"
+            alt="Marilyn Kulpa soin énergétique La Riche"
+          />
+        </picture>
 
-      <h1 class="soins-hero-banner-title">Soin Energétique</h1>
-      <div class="soins-wave-overlay"></div>
-    </div>
-  </header>
-  <section class="soins-section1"></section>
-</body>
+        <h1 class="soins-hero-banner-title">Soin Energétique</h1>
+        <div class="soins-wave-overlay"></div>
+      </div>
+    </header>
+    <section class="soins-section1">
+      <h2>À la découverte du Soin Énergétique</h2>
+      <div class="soins-section1-content">
+        <div class="soins-section1-body">
+          <p>
+            Un soin énergétique est une pratique holistique visant à
+            rééquilibrer les flux d’énergie dans le corps afin de favoriser le
+            bien-être physique, émotionnel et mental. Cette approche repose sur
+            la compréhension que le corps humain est parcouru par des énergies
+            subtiles qui influencent notre état général. 
+          </p>
+        </div>
+        <div class="soins-section1-image">
+          <picture>
+            <source
+              srcset="./Images/Desktop/soinenergetiquesection1.jpg"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/soinenergetiquesection1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/soinenergetiquesection1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <script>
+      function onScroll() {
+        if (window.innerWidth > 768) return; // stop si desktop
 
+        const images = document.querySelectorAll(".soins-section1-image img");
+
+        images.forEach((img) => {
+          const rect = img.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          const start = windowHeight;
+          const end = windowHeight * 0.6;
+
+          let progress = (start - rect.top) / (start - end);
+          progress = Math.min(Math.max(progress, 0), 1);
+
+          img.style.transform = `translateY(${(1 - progress) * -100}%)`;
+          img.style.opacity = progress;
+        });
+      }
+
+      window.addEventListener("scroll", onScroll);
+      window.addEventListener("resize", onScroll);
+      window.addEventListener("load", onScroll);
+    </script>
+  </body>
 </html>

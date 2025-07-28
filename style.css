@@ -202,7 +202,7 @@ h2 {
 
 
 .hero-banner__title h1 {
-    
+
     color: #A45200;
 }
 
@@ -1123,7 +1123,7 @@ footer {
     position: relative;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: 70vh;
+    grid-template-rows: 50vh;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -1148,13 +1148,14 @@ footer {
 }
 
 .soins-hero-banner-title {
-    position: relative; /* nécessaire pour le reflet */
+    position: relative;
+    /* nécessaire pour le reflet */
     grid-column: 1 / -1;
     grid-row: 1;
     z-index: 2;
     justify-self: center;
     align-self: self-start;
-    margin-top: 8vh; 
+    margin-top: 3.3vh;
     text-align: center;
     font-size: 2em;
     width: 100%;
@@ -1173,14 +1174,12 @@ footer {
     left: -50;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent 0%,
-        rgba(255, 255, 254, 0.312) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(120deg,
+            transparent 0%,
+            rgba(255, 255, 254, 0.312) 50%,
+            transparent 100%);
     transform: skewX(100deg);
-    animation: shine 5s infinite ease-in-out ;
+    animation: shine 5s infinite ease-in-out;
     z-index: 3;
     pointer-events: none;
 }
@@ -1189,6 +1188,7 @@ footer {
     0% {
         left: -100%;
     }
+
     100% {
         left: 150%;
     }
@@ -1206,16 +1206,75 @@ footer {
     pointer-events: none;
 }
 
-.soins-section1 {
-    background-color: #F4E5DB;
-    height: 50vh;
-}
-
 /* RESPONSIVE HEADER PAGE SOINS */
 
 @media screen and (min-width: 768px) {
     .soins-hero-banner-title {
         font-size: 3em;
-        margin-top: 1vh;
+        margin-top: 3.3vh;
+    }
+
+    .soins-hero-banner {
+        grid-template-rows: 70vh;
     }
 }
+
+
+.soins-section1 {
+    background-color: #F4E5DB;
+    height: 200vh;
+}
+
+.soins-section1 h2 {
+    text-align: center;
+    padding-top: 2.5em;
+    margin: 0px 25px 0px 25px;
+}
+
+.soins-section1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soins-section1-body {
+    z-index: 2;
+    background-color: #E6B89C;
+    padding: 25px;
+    margin: 2.5em 25px 25px 25px;
+    border-radius: 25px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+}
+
+.soins-section1-image {
+    margin: 35px;
+}
+
+.soins-section1-image img {
+    border-radius: 25px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: none;
+    will-change: transform, opacity;}
+
+
+
+
+    @media screen and (min-width: 768px) {
+        .soins-section1-content {
+            flex-direction: row;
+            margin-top: 3em;
+        }
+
+        .soins-section1-body {
+            width: 50%;
+            padding: 50px 25px 50px 25px;
+            margin-right: 0;
+        }
+
+        .soins-section1-image img {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
