@@ -1222,7 +1222,6 @@ footer {
 
 .soins-section1 {
     background-color: #F4E5DB;
-    height: 200vh;
 }
 
 .soins-section1 h2 {
@@ -1253,28 +1252,37 @@ footer {
 
 .soins-section1-image img {
     border-radius: 25px;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: none;
-    will-change: transform, opacity;}
+}
 
 
 
 
-    @media screen and (min-width: 768px) {
-        .soins-section1-content {
-            flex-direction: row;
-            margin-top: 3em;
-        }
+@media screen and (min-width: 768px) {
 
-        .soins-section1-body {
-            width: 50%;
-            padding: 50px 25px 50px 25px;
-            margin-right: 0;
-        }
-
-        .soins-section1-image img {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .soins-section1-content {
+        flex-direction: row;
+        margin-top: 3em;
     }
+
+    .soins-section1-body {
+        width: 50%;
+        padding: 50px 25px 50px 25px;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+     .soins-section1 {
+        justify-items: center;
+    }
+
+    .soins-section1-content{
+         width: 75%;
+
+    }
+
+    .soins-section1-body{
+        padding: 65px 25px 65px 25px;
+    }
+}

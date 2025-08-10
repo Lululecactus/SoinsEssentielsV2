@@ -125,30 +125,5 @@
         </div>
       </div>
     </section>
-    <script>
-      function onScroll() {
-        if (window.innerWidth > 768) return; // stop si desktop
-
-        const images = document.querySelectorAll(".soins-section1-image img");
-
-        images.forEach((img) => {
-          const rect = img.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
-
-          const start = windowHeight;
-          const end = windowHeight * 0.6;
-
-          let progress = (start - rect.top) / (start - end);
-          progress = Math.min(Math.max(progress, 0), 1);
-
-          img.style.transform = `translateY(${(1 - progress) * -100}%)`;
-          img.style.opacity = progress;
-        });
-      }
-
-      window.addEventListener("scroll", onScroll);
-      window.addEventListener("resize", onScroll);
-      window.addEventListener("load", onScroll);
-    </script>
   </body>
 </html>
