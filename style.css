@@ -1254,6 +1254,16 @@ footer {
 }
 
 
+.soins-wave-section1{
+    position: relative;
+    aspect-ratio: 1000/ 200;
+    background: url('./Images/Desktop/wavesoins_modified.svg') no-repeat bottom center;
+    background-size: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -1269,6 +1279,10 @@ footer {
         margin-right: 0;
     }
 }
+
+
+/* RESPONSIVE SECTION 1 PAGE SOINS */
+
 
 
 @media screen and (min-width: 1024px){
