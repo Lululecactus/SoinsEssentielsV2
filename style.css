@@ -1337,6 +1337,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    grid-template-rows: 211px;
 }
 
 .soins-section2-gallery img {
@@ -1354,4 +1355,26 @@ footer {
     background-size: cover;
     z-index: 1;
     pointer-events: none;
+}
+
+
+/* SOINS SECTION 2 RESPONSIVE */
+
+@media screen and (min-width: 768px){
+    .soins-section2-content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .soins-section2-gallery{
+         grid-template-rows: 211px;
+    }
+
+    .soins-section2-body{
+        display: flex;
+        align-items: center;
+
+    }
+
 }
