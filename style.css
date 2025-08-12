@@ -1254,7 +1254,7 @@ footer {
 }
 
 
-.soins-wave-section1{
+.soins-wave-section1 {
     position: relative;
     aspect-ratio: 1000/ 200;
     background: url('./Images/Desktop/wavesoins_modified.svg') no-repeat bottom center;
@@ -1285,17 +1285,17 @@ footer {
 
 
 
-@media screen and (min-width: 1024px){
-     .soins-section1 {
+@media screen and (min-width: 1024px) {
+    .soins-section1 {
         justify-items: center;
     }
 
-    .soins-section1-content{
-         width: 75%;
+    .soins-section1-content {
+        width: 75%;
 
     }
 
-    .soins-section1-body{
+    .soins-section1-body {
         padding: 65px 25px 65px 25px;
     }
 }
@@ -1303,7 +1303,7 @@ footer {
 
 /* SOINS SECTION 2 */
 
-.soins-section2{
+.soins-section2 {
     background-color: #D9D9D9;
 }
 
@@ -1313,11 +1313,11 @@ footer {
     text-transform: uppercase;
 }
 
-.soins-section2-content{
+.soins-section2-content {
     margin-top: 2.5em;
 }
 
-.soins-section2-body{
+.soins-section2-body {
     background-color: #CC999E;
     border-radius: 20px;
     padding: 25px;
@@ -1328,18 +1328,18 @@ footer {
 
 
 
-.soins-section2-body li{
+.soins-section2-body li {
     margin-bottom: 10px;
 }
 
-.soins-section2-gallery{
+.soins-section2-gallery {
     margin: 35px 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 }
 
-.soins-section2-gallery img{
+.soins-section2-gallery img {
     border-radius: 20px;
     width: 100%;
     height: 100%;
@@ -1347,7 +1347,7 @@ footer {
 }
 
 
-.soins-wave-section2{
+.soins-wave-section2 {
     position: relative;
     aspect-ratio: 1000/ 200;
     background: url('./Images/Desktop/wavesoins.svg') no-repeat bottom center;
