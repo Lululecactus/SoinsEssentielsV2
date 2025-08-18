@@ -751,10 +751,12 @@ h2 {
 .section4__card-body h3 {
     text-align: center;
     margin-bottom: 30px;
-    min-height: 3.6em; /* environ 2 lignes */
+    min-height: 3.6em;
+    /* environ 2 lignes */
     line-height: 1.2em;
     display: flex;
-    align-items: center; /* centre verticalement */
+    align-items: center;
+    /* centre verticalement */
     justify-content: center;
 }
 
@@ -1324,6 +1326,9 @@ footer {
 }
 
 .soins-section2-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #CC999E;
     border-radius: 20px;
     padding: 25px;
@@ -1354,6 +1359,64 @@ footer {
 }
 
 
+.soins-section2-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 9;
+
+}
+
+.soins-section2-button-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.soins-section2-button-wrapper button {
+    background-color: #145A32;
+    font-family: Montserrat;
+    margin-top: 15px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 35px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+
+.soins-section2-button-wrapper button:hover {
+    background-color: #E38833;
+    box-shadow:
+        inset 2px 4px 6px rgba(255, 255, 255, 0.4),
+        inset -2px -4px 6px rgba(0, 0, 0, 0.2),
+        0 8px 20px rgba(227, 136, 51, 0.15),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #fff;
+
+}
+
+.soins-section2-button-wrapper button:active {
+    transform: scale(0.95);
+    /* Slightly shrink the button */
+    box-shadow:
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    /* Reduced highlight */
+    background-color: #d17a2e;
+    /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px);
+    /* Slightly reduced blur for realism */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
 .soins-wave-section2 {
     position: relative;
     aspect-ratio: 1000/ 200;
@@ -1366,18 +1429,18 @@ footer {
 
 /* SOINS SECTION 2 RESPONSIVE */
 
-@media screen and (min-width: 768px){
-    .soins-section2-content{
+@media screen and (min-width: 768px) {
+    .soins-section2-content {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
     }
 
-    .soins-section2-gallery{
-         grid-template-rows: 211px;
+    .soins-section2-gallery {
+        grid-template-rows: 211px;
     }
 
-    .soins-section2-body{
+    .soins-section2-body {
         display: flex;
         align-items: center;
 
