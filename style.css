@@ -1264,6 +1264,7 @@ footer {
 }
 
 .soins-section1-image img {
+    max-height: 400px;
     border-radius: 25px;
 }
 
