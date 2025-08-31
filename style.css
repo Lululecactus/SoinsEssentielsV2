@@ -1356,6 +1356,13 @@ footer {
     gap: 16px;
 }
 
+
+.fengshui-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .soins-section2-gallery img {
     border-radius: 20px;
     width: 100%;
