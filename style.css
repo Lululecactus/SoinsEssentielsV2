@@ -584,7 +584,7 @@ h2 {
     scale: 0.9;
 }
 
-.fa-arrow-right{
+.fa-arrow-right {
     font-size: 20px;
     vertical-align: middle;
     margin-left: 5px;
@@ -1232,7 +1232,7 @@ footer {
         grid-template-rows: 70vh;
     }
 
-    .lithotherapie-title{
+    .lithotherapie-title {
         color: #fff;
     }
 }
@@ -1321,11 +1321,75 @@ footer {
     }
 }
 
+/* SOINS SECTION WARNING */
+.soins-warning {
+    background-color: #D9D9D9;
+}
+
+.soins-warning p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2.5em
+}
+
+.soins-warning h2 {
+    padding-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FE1F1F;
+}
+
+.soins-warning h3 {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.fa-circle-exclamation {
+    color: #E38833;
+    margin-right: 15px;
+}
+
+.soins-warning-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.soins-warning-card1 {
+    padding: 25px;
+    margin: 2.5em 25px 25px 25px;
+    border-radius: 25px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: #EBCFBD;
+}
+
+.soins-warning-card2 {
+    padding: 25px;
+    margin: 2.5em 25px 25px 25px;
+    border-radius: 25px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: #E6B89C;
+}
+
+@media screen and (min-width: 768px) {
+    .soins-warning-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        /* espace entre body et galerie */
+    }
+}
 
 /* SOINS SECTION 2 */
 
 .soins-section2 {
     background-color: #D9D9D9;
+}
+
+.warning-section2 {
+    background-color: #F4E5DB;
 }
 
 .soins-section2 h2 {
@@ -1346,8 +1410,8 @@ footer {
     border-radius: 20px;
     padding: 25px;
     margin: 1em 25px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 
-                0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+        0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .soins-section2-body li {
@@ -1358,7 +1422,8 @@ footer {
     margin: 35px 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 250px); /* 2 lignes de 250px */
+    grid-template-rows: repeat(2, 250px);
+    /* 2 lignes de 250px */
     gap: 16px;
 }
 
@@ -1373,7 +1438,8 @@ footer {
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* évite la déformation des images */
+    object-fit: cover;
+    /* évite la déformation des images */
 }
 
 .soins-section2-text {
@@ -1442,11 +1508,13 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        gap: 2rem; /* espace entre body et galerie */
+        gap: 2rem;
+        /* espace entre body et galerie */
     }
 
     .soins-section2-gallery {
-        max-width: 500px; /* limite la largeur pour ne pas écraser le texte */
+        max-width: 500px;
+        /* limite la largeur pour ne pas écraser le texte */
     }
 
     .soins-section2-body {
@@ -1461,6 +1529,10 @@ footer {
 
 .soins-section3 {
     background-color: #F4E5DB;
+}
+
+.warning-section3{
+    background-color: #D9D9D9;
 }
 
 .soins-section3 h2 {
@@ -1565,7 +1637,7 @@ footer {
 
 
 
-/* SECTION 5 */
+/* SECTION 4 */
 
 .soins-section4 {
     background-color: #D9D9D9;
@@ -1574,6 +1646,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: auto auto auto auto;
+}
+
+.warning-section4{
+    background-color: #F4E5DB;
 }
 
 .soins-section4__content {
