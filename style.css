@@ -1531,7 +1531,7 @@ footer {
     background-color: #F4E5DB;
 }
 
-.warning-section3{
+.warning-section3 {
     background-color: #D9D9D9;
 }
 
@@ -1648,7 +1648,7 @@ footer {
     grid-template-rows: auto auto auto auto;
 }
 
-.warning-section4{
+.warning-section4 {
     background-color: #F4E5DB;
 }
 
@@ -1786,4 +1786,115 @@ footer {
         transform: rotate(180deg) translateX(40px);
 
     }
+}
+
+
+/* PAGE CONTACT ET TARIFS  */
+/* contact et tarifs header */
+.contact-hero-banner {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.contact-hero-banner h1 {
+    color: #fff;
+}
+
+.contact-hero-banner picture {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact-hero-banner picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== Icônes ===== */
+.contact-icon-container {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.contact-icon-container i {
+    font-size: 1.5em;
+}
+
+.contact-header-card {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* texte caché */
+.contact-header-hidden {
+    opacity: 0;
+    transform: translateY(15px) scale(0.98);
+    visibility: hidden;
+    /* reste dans le flux mais invisible */
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0s linear 0.6s;
+    /* cache seulement après anim */
+    pointer-events: none;
+}
+
+/* hover */
+.contact-header-card:hover {
+    border-radius: 20px;
+    box-shadow:
+        inset 0 4px 12px rgba(255, 255, 255, 0.4),
+        inset 2px -6px 5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.contact-header-card:hover .contact-header-hidden {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    visibility: visible;
+    transition-delay: 0s;
+    /* visible direct au hover */
+    pointer-events: auto;
+}
+
+.contact-header-card:active {
+    transform: scale(0.95);
+    /* Slightly shrink the button */
+    box-shadow:
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    /* Reduced highlight */
+    /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px);
+    /* Slightly reduced blur for realism */
+    -webkit-backdrop-filter: blur(10px);
+    color:#d17a2e;
+}
+
+/* contact header responsive */
+
+@media screen and (min-width: 768px) {
+    .contact-icon-container {
+        flex-direction: row;
+    }
+
 }
