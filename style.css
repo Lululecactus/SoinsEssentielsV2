@@ -1887,7 +1887,7 @@ footer {
     backdrop-filter: blur(10px);
     /* Slightly reduced blur for realism */
     -webkit-backdrop-filter: blur(10px);
-    color:#d17a2e;
+    color: #d17a2e;
 }
 
 /* contact header responsive */
@@ -1896,5 +1896,47 @@ footer {
     .contact-icon-container {
         flex-direction: row;
     }
+
+}
+
+
+/* div flower */
+.contact-flowers-top {
+    background-color: #F4E5DB;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 0;
+    /* pas d'espace entre colonnes */
+}
+
+.contact-flowers-top img {
+    width: 100%;
+    height: 86%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+
+.flower-top-left {
+    grid-column: 1/2;
+}
+
+.flower-top-middle {
+    grid-column: 2/3;
+}
+
+.flower-top-right {
+    grid-column: 3/ -1;
+}
+
+
+/* contact section offers */
+
+.contact-section-offers {
+    background-color: #F4E5DB;
+    padding: 15px;
+    margin-top: 0px;
+    border-radius: 0px;
 
 }
