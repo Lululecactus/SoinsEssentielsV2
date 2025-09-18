@@ -1954,10 +1954,17 @@ footer {
     padding: 15px;
 }
 
+
+/* CONTACT SECTION RDV */
+
 .contact_rdv{
     background-color: #F4E5DB;
     padding-top: 3.5em;
     padding-bottom: 3.5em;
+}
+
+.calendly-inline-widget{
+    z-index: 2;
 }
 
 .contact_rdv h2{
@@ -2003,5 +2010,43 @@ footer {
         width: 60%;
         transform: rotate(180deg) translateX(-67.2%);
     }
+
+}
+
+
+.contact-flowers-bottom-rdv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; 
+
+}
+
+.flower-rdv-bottom-left{
+    grid-column: 1;
+    grid-row: 2; /* première ligne */
+    width: 57%;
+    transform: translateX(77.5%);
+}
+
+.flower-rdv-bottom-middle{
+    grid-column: 2;
+    grid-row: 2;
+    width: 57%;
+    transform: translateX(-2%);
+
+}
+
+@media screen and (min-width: 650px){
+    .contact-flowers-bottom-rdv{
+        margin-top: -35px;
+        z-index: 1;
+    }
+
+}
+
+@media screen and (min-width: 715px){
+     .contact-flowers-bottom-rdv{
+        margin-top: -50px;
+     }
 
 }
