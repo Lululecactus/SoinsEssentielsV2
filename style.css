@@ -1935,7 +1935,7 @@ footer {
 
 .contact-section-offers {
     background-color: #F4E5DB;
-    padding: 15px;
+    padding: 15px 15px 100px 15px;
     margin-top: 0px;
     border-radius: 0px;
 
@@ -1952,4 +1952,56 @@ footer {
 }
 .contact__card-body{
     padding: 15px;
+}
+
+.contact_rdv{
+    background-color: #F4E5DB;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+}
+
+.contact_rdv h2{
+    text-align: center;
+}
+
+.contact-flowers-rdv {
+    margin-bottom: -3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; 
+}
+
+.flower-rdv-left {
+    grid-column: 2;
+    grid-row: 2; /* première ligne */
+    width: 57%;
+    transform: rotate(180deg)translateX(8.7%);
+}
+
+.flower-rdv-middle {
+    grid-column: 1;
+    grid-row: 2;
+    width: 57%;
+    transform: rotate(180deg) translateX(-70.7%);
+}
+@media screen and (min-width: 650px){
+    .contact-flowers-rdv{
+        margin-bottom: -70px;
+    }
+
+}
+
+@media screen and (min-width: 715px){
+    .contact-flowers-rdv{
+        margin-bottom: -77px;
+    }
+    .flower-rdv-left{
+        width: 60%;
+        transform: rotate(180deg)translateX(3.3%);
+    }
+    .flower-rdv-middle{
+        width: 60%;
+        transform: rotate(180deg) translateX(-67.2%);
+    }
+
 }
