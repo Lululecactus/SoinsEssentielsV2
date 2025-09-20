@@ -16,6 +16,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     max-width: 1440px;
     margin: 0 auto;
+    scroll-behavior: smooth
 }
 
 img {
@@ -787,7 +788,7 @@ h2 {
 
 }
 
-.section4 button {
+.section4 .button {
     background-color: #E38833;
     font-family: Montserrat, sans-serif;
     margin-top: 15px;
@@ -810,7 +811,7 @@ h2 {
     /* Assure que le padding est calculé de la même manière */
 }
 
-.section4 button:hover {
+.section4 .button:hover {
     background-color: #E38833;
     box-shadow:
         inset 2px 4px 6px rgba(255, 255, 255, 0.4),
@@ -822,7 +823,7 @@ h2 {
     color: #fff;
 }
 
-.section4 button:active {
+.section4 .button:active {
     transform: scale(0.95);
     /* Slightly shrink the button */
     box-shadow:
@@ -893,7 +894,7 @@ h2 {
 }
 
 
-.section5 button {
+.section5 .button {
     background-color: #145A32;
     font-family: Montserrat;
     margin-top: 15px;
@@ -906,7 +907,7 @@ h2 {
     font-weight: 500;
 }
 
-.section5 button:hover {
+.section5 .button:hover {
     background-color: #E38833;
     box-shadow:
         inset 2px 4px 6px rgba(255, 255, 255, 0.4),
@@ -919,7 +920,7 @@ h2 {
 
 }
 
-.section5 button:active {
+.section5 .button:active {
     transform: scale(0.95);
     /* Slightly shrink the button */
     box-shadow:
@@ -1457,7 +1458,7 @@ footer {
     justify-content: flex-end;
 }
 
-.soins-section2-button-wrapper button {
+.soins-section2-button-wrapper .button {
     background-color: #145A32;
     font-family: Montserrat;
     margin-top: 15px;
@@ -1470,7 +1471,7 @@ footer {
     font-weight: 500;
 }
 
-.soins-section2-button-wrapper button:hover {
+.soins-section2-button-wrapper .button:hover {
     background-color: #E38833;
     box-shadow:
         inset 2px 4px 6px rgba(255, 255, 255, 0.4),
@@ -1482,7 +1483,7 @@ footer {
     color: #fff;
 }
 
-.soins-section2-button-wrapper button:active {
+.soins-section2-button-wrapper .button:active {
     transform: scale(0.95);
     box-shadow:
         inset 2px 4px 8px rgba(0, 0, 0, 0.3),
@@ -1682,7 +1683,7 @@ footer {
 }
 
 
-.soins-section4 button {
+.soins-section4 .button {
     background-color: #145A32;
     font-family: Montserrat;
     margin-top: 15px;
@@ -1695,7 +1696,7 @@ footer {
     font-weight: 500;
 }
 
-.soins-section4 button:hover {
+.soins-section4 .button:hover {
     background-color: #E38833;
     box-shadow:
         inset 2px 4px 6px rgba(255, 255, 255, 0.4),
@@ -1708,7 +1709,7 @@ footer {
 
 }
 
-.soins-section4 button:active {
+.soins-section4 .button:active {
     transform: scale(0.95);
     /* Slightly shrink the button */
     box-shadow:
@@ -1976,6 +1977,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto; 
+    opacity: 0.4;
 }
 
 .flower-rdv-left {
@@ -2018,6 +2020,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto; 
+    opacity: 0.4;
 
 }
 
@@ -2049,4 +2052,136 @@ footer {
         margin-top: -50px;
      }
 
+}
+
+
+/* contact section contact  */
+
+.contact-section-contact {
+    background-color: #F4E5DB;
+
+}
+
+.contact-section-contact h2 {
+    text-align: center;
+    padding-top: 3em;
+    margin: 0px 25px;
+    text-transform: uppercase;
+}
+
+.contact-paragraphe{
+    padding: 25px;
+}
+
+.contact-section-contact-content {
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.contact-section-contact-body {
+    background-color: #E6B89C;
+    padding: 25px;
+    margin: 2.5em 25px 25px 25px;
+    border-radius: 25px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.contact-section-contact h3 {
+    margin-top: 1.7em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-section-contact-gallery {
+    margin: 35px 25px;
+}
+
+.contact-section-contact-gallery img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-section-contact-body-email{
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section-contact-body .button{
+    width: 100%;
+    background-color: #145A32;
+    font-family: Montserrat, sans-serif;
+    padding: 15px 20px;
+    border-radius: 35px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.contact-section-contact-body .button:hover {
+    background-color: #145A32;
+    box-shadow:
+        inset 2px 4px 6px rgba(255, 255, 255, 0.4),
+        inset -2px -4px 6px rgba(0, 0, 0, 0.2),
+        0 8px 20px rgba(227, 136, 51, 0.15),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #fff;
+}
+
+.contact-section-contact-body .button:active {
+    transform: scale(0.95);
+    /* Slightly shrink the button */
+    box-shadow:
+        inset 2px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Deeper inset shadow for pressed effect */
+        inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    /* Reduced highlight */
+    background-color: #d17a2e;
+    /* Slightly darker shade for pressed state */
+    backdrop-filter: blur(10px);
+    /* Slightly reduced blur for realism */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+@media screen and (min-width: 650px){
+    .footer-flower{
+        transform: translateY(-65px);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .contact-section-contact-content{
+        flex-direction: row;
+    }
+
+    .contact-section-contact-gallery{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-section-contact-body{
+        width: 100%;
+    }
+     .contact-section-contact-gallery img {
+        max-height: 500px; /* plus grand sur grand écran */
+    }
+    
 }
