@@ -16,7 +16,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     max-width: 1440px;
     margin: 0 auto;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 img {
@@ -31,6 +31,21 @@ span {
 a {
     text-decoration: none;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    /* enlève le carré bleu Android */
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    /* pareil pour les boutons */
+}
+
+/* Garder un retour visuel pour l’accessibilité clavier */
+a:focus,
+button:focus {
+    outline: 2px solid #145A32;
+    /* remplace par ta couleur de thème */
+    outline-offset: 2px;
 }
 
 h1 {
@@ -38,12 +53,12 @@ h1 {
     font-family: "Playfair Display SC", serif;
 }
 
-
 h2 {
     font-size: 1.5em;
-    font-family: Playfair Display SC, serif;
+    font-family: "Playfair Display SC", serif;
     margin-bottom: 2.5em;
 }
+
 
 
 
@@ -1942,33 +1957,34 @@ footer {
 
 }
 
-.test{
+.test {
     display: flex;
     flex-direction: column;
 }
 
-.contact__card-footer{
+.contact__card-footer {
     justify-content: flex-start;
     padding: 15px;
 }
-.contact__card-body{
+
+.contact__card-body {
     padding: 15px;
 }
 
 
 /* CONTACT SECTION RDV */
 
-.contact_rdv{
+.contact_rdv {
     background-color: #F4E5DB;
     padding-top: 3.5em;
     padding-bottom: 3.5em;
 }
 
-.calendly-inline-widget{
+.calendly-inline-widget {
     z-index: 2;
 }
 
-.contact_rdv h2{
+.contact_rdv h2 {
     text-align: center;
 }
 
@@ -1976,13 +1992,14 @@ footer {
     margin-bottom: -3px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto auto;
     opacity: 0.4;
 }
 
 .flower-rdv-left {
     grid-column: 2;
-    grid-row: 2; /* première ligne */
+    grid-row: 2;
+    /* première ligne */
     width: 57%;
     transform: rotate(180deg)translateX(8.7%);
 }
@@ -1993,22 +2010,25 @@ footer {
     width: 57%;
     transform: rotate(180deg) translateX(-70.7%);
 }
-@media screen and (min-width: 650px){
-    .contact-flowers-rdv{
+
+@media screen and (min-width: 650px) {
+    .contact-flowers-rdv {
         margin-bottom: -70px;
     }
 
 }
 
-@media screen and (min-width: 715px){
-    .contact-flowers-rdv{
+@media screen and (min-width: 715px) {
+    .contact-flowers-rdv {
         margin-bottom: -77px;
     }
-    .flower-rdv-left{
+
+    .flower-rdv-left {
         width: 60%;
         transform: rotate(180deg)translateX(3.3%);
     }
-    .flower-rdv-middle{
+
+    .flower-rdv-middle {
         width: 60%;
         transform: rotate(180deg) translateX(-67.2%);
     }
@@ -2016,22 +2036,23 @@ footer {
 }
 
 
-.contact-flowers-bottom-rdv{
+.contact-flowers-bottom-rdv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto auto;
     opacity: 0.4;
 
 }
 
-.flower-rdv-bottom-left{
+.flower-rdv-bottom-left {
     grid-column: 1;
-    grid-row: 2; /* première ligne */
+    grid-row: 2;
+    /* première ligne */
     width: 57%;
     transform: translateX(77.5%);
 }
 
-.flower-rdv-bottom-middle{
+.flower-rdv-bottom-middle {
     grid-column: 2;
     grid-row: 2;
     width: 57%;
@@ -2039,18 +2060,18 @@ footer {
 
 }
 
-@media screen and (min-width: 650px){
-    .contact-flowers-bottom-rdv{
+@media screen and (min-width: 650px) {
+    .contact-flowers-bottom-rdv {
         margin-top: -35px;
         z-index: 1;
     }
 
 }
 
-@media screen and (min-width: 715px){
-     .contact-flowers-bottom-rdv{
+@media screen and (min-width: 715px) {
+    .contact-flowers-bottom-rdv {
         margin-top: -50px;
-     }
+    }
 
 }
 
@@ -2069,7 +2090,7 @@ footer {
     text-transform: uppercase;
 }
 
-.contact-paragraphe{
+.contact-paragraphe {
     padding: 25px;
 }
 
@@ -2112,13 +2133,13 @@ footer {
     object-fit: cover;
 }
 
-.contact-section-contact-body-email{
+.contact-section-contact-body-email {
     padding-top: 3em;
     display: flex;
     justify-content: center;
 }
 
-.contact-section-contact-body .button{
+.contact-section-contact-body .button {
     width: 100%;
     background-color: #145A32;
     font-family: Montserrat, sans-serif;
@@ -2160,28 +2181,30 @@ footer {
     -webkit-backdrop-filter: blur(10px);
 }
 
-@media screen and (min-width: 650px){
-    .footer-flower{
+@media screen and (min-width: 650px) {
+    .footer-flower {
         transform: translateY(-65px);
     }
 }
 
 
 @media screen and (min-width: 768px) {
-    .contact-section-contact-content{
+    .contact-section-contact-content {
         flex-direction: row;
     }
 
-    .contact-section-contact-gallery{
+    .contact-section-contact-gallery {
         width: 100%;
         height: 100%;
     }
 
-    .contact-section-contact-body{
+    .contact-section-contact-body {
         width: 100%;
     }
-     .contact-section-contact-gallery img {
-        max-height: 500px; /* plus grand sur grand écran */
+
+    .contact-section-contact-gallery img {
+        max-height: 500px;
+        /* plus grand sur grand écran */
     }
-    
+
 }
