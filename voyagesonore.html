@@ -1,497 +1,339 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voyage Sonore</title>
-    <!-- Fonts Google : Playfair Display SC & Montserrat -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Feuille de style principale -->
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voyage Sonore</title>
+  <!-- Fonts Google : Playfair Display SC & Montserrat -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- FontAwesome 6.6.0 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
-    <meta
-      name="msapplication-TileImage"
-      content="./Images/Mobile/favicon-144x144.png"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="nav-bar">
-        <div class="nav-bar__branding">
-          <a href="./index.html">
-            <img
-              src="./Images/Mobile/lgog1.png"
-              alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
-            />
-          </a>
-          <a href="./index.html">
-            <p>Soins Essentiels</p>
-          </a>
-        </div>
-        <nav>
-          <ul class="nav-bar__main-menu">
-            <li><a href="./index.html">Accueil</a></li>
-            <li>
-              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-              <ul class="nav-bar__sub-menu">
-                <li>
-                  <a href="./soin-energetique.html">Soin Énergétique</a>
-                </li>
-                <li>
-                  <a href="./lithotherapie.html">Séance de Lithothérapie</a>
-                </li>
-                <li>
-                  <a href="./massagesonore.html"
-                    >Massage Sonore aux Bols Chantants Tibétains</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./voyagesonore.html"
-                    class="nav-bar__main-menu--active"
-                    >Voyage Sonore</a
-                  >
-                </li>
-                <li><a href="./purification.html">Purification de Lieux</a></li>
-                <li>
-                  <a href="./fengshui.html">Conseils en Feng-Shui</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
-          </ul>
-          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-        </nav>
+  <!-- script JS  -->
+  <script src="script.js" defer></script>
+
+
+
+  <!-- FontAwesome 6.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
+  <meta name="msapplication-TileImage" content="./Images/Mobile/favicon-144x144.png" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="nav-bar__branding">
+        <a href="./index.html">
+          <img src="./Images/Mobile/lgog1.png" alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours" />
+        </a>
+        <a href="./index.html">
+          <p>Soins Essentiels</p>
+        </a>
       </div>
-
-      <div class="soins-hero-banner">
-        <picture>
-          <source
-            srcset="./Images/Desktop/voyagesonoreherobanner.webp"
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="./Images/Mobile/voyagesonoreherobanner.webp"
-            type="image/webp"
-          />
-          <img
-            src="./Images/Mobile/voyagesonoreherobanner.webp"
-            alt="Marilyn Kulpa soin énergétique La Riche"
-          />
-        </picture>
-
-        <h1 class="soins-hero-banner-title voyage-sonore-title">Voyage Sonore</h1>
-        <div class="soins-wave-overlay"></div>
-      </div>
-    </header>
-    <section class="soins-section1">
-      <h2>À la découverte du Voyage Sonore</h2>
-      <div class="soins-section1-content">
-        <div class="soins-section1-body">
-          <p>
-            Fermez les yeux… Laissez-vous porter par les vibrations des bols
-            chantants, du tambour et des sons sacrés. Le temps s’arrête, le
-            corps se relâche, l’esprit s’envole. Bienvenue dans un voyage
-            sonore. Le voyage sonore est une expérience immersive de relaxation
-            profonde, guidée par les sons et les vibrations d’instruments
-            thérapeutiques tels que les bols chantants tibétains, tambour
-            chamanique, diapasons et koshi.  Le voyage sonore permet d’accéder à
-            des états modifiés de conscience de façon très facile et
-            sécuritaire.   Les vibrations traversent chaque cellule, libèrent
-            les tensions, calment le mental et favorisent une reconnexion à soi.
-            C’est une véritable méditation guidée par le son, qui invite au
-            lâcher-prise, à la détente et à l’harmonisation énergétique. 
-          </p>
-        </div>
-        <div class="soins-section1-image">
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonoresection1.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/voyagesonoresection1.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonoresection1.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-        </div>
-      </div>
-      <picture class="section1__flower">
-        <source
-          srcset="./Images/Desktop/fleurssection1.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection1mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection1mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section1"></div>
-    </section>
-    <section class="soins-warning">
-      <h2>
-        <i class="fa-solid fa-circle-exclamation"></i> À qui le voyage sonore ne
-        s’adresse pas ?
-      </h2>
-      <p>Gardez à l’esprit : VIBRATIONS et ÉTATS MODIFIÉS DE CONSCIENCE.</p>
-      <div class="soins-warning-content">
-        <div class="soins-warning-card1">
-          <h3>CONTRE-INDICATION ABSOLUE:</h3>
-          <ul>
-            <li>Épilepsie, déclenchée par les sons</li>
-            <li>
-              Troubles psychiatriques, y compris certains cas de dépression
-              sévère
-            </li>
-            <li>Phlébites, plaies, plaques d’athéromes, ...</li>
-            <li>Pacemaker, dispositif implanté, stents, ...</li>
-          </ul>
-        </div>
-        <div class="soins-warning-card2">
-          <h3>GRANDES PRÉCAUTIONS:</h3>
-          <ul>
-            <li>Troubles auditifs</li>
-            <li>Femmes enceintes</li>
-            <li>Bébés et touts petits</li>
-            <li>Toute personne présentant un état de santé particulier.</li>
-          </ul>
-        </div>
-      </div>
-      <p>
-        En cas de doute, il est vivement recommandé de consulter un
-        professionnel de santé (médecin, spécialiste, etc.) avant de réserver
-        une séance
-      </p>
-      <picture class="section2__flower">
-        <source
-          srcset="./Images/Desktop/flowersection2.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection2mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection2mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section2"></div>
-    </section>
-    <section class="soins-section2 warning-section2">
-      <h2>les Bienfaits !</h2>
-      <div class="soins-section2-content">
-        <div class="soins-section2-body">
-          <div class="soins-section2-text">
-            <ul>
-              <li>Apaisement global du système nerveux</li>
-              <li>Lâcher-prise mental et méditatif</li>
-              <li>Harmonisation énergétique subtile et globale</li>
-              <li>Stimulation de l’imaginaire et de l’intuition</li>
-              <li>Idéal pour retrouver un état de sérénité et de recentrage</li>
+      <nav>
+        <ul class="nav-bar__main-menu">
+          <li><a href="./index.html">Accueil</a></li>
+          <li>
+            <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="nav-bar__sub-menu">
+              <li>
+                <a href="./soin-energetique.html">Soin Énergétique</a>
+              </li>
+              <li>
+                <a href="./lithotherapie.html">Séance de Lithothérapie</a>
+              </li>
+              <li>
+                <a href="./massagesonore.html">Massage Sonore aux Bols Chantants Tibétains</a>
+              </li>
+              <li>
+                <a href="./voyagesonore.html" class="nav-bar__main-menu--active">Voyage Sonore</a>
+              </li>
+              <li><a href="./purification.html">Purification de Lieux</a></li>
+              <li>
+                <a href="./fengshui.html">Conseils en Feng-Shui</a>
+              </li>
             </ul>
-          </div>
-          <div class="soins-section2-button-wrapper">
-            <a href="#" class="button">Réservez une Séance</a>
-          </div>
-        </div>
-        <div class="soins-section2-gallery">
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonorebenefit1.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/massagesonorebenefit1.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonorebenefit1.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonorebenefit2.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/voyagesonorebenefit2.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonorebenefit2.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonorebenefit3.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/voyagesonorebenefit3.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonorebenefit3.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonorebenefit4.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/voyagesonorebenefit4.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonorebenefit4.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-        </div>
-      </div>
-      <picture class="section2__flower">
-        <source
-          srcset="./Images/Desktop/flowersection2.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection2mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection2mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section1"></div>
-    </section>
-    <section class="soins-section3 warning-section3">
-      <h2>Le Déroulement du voyage Sonore</h2>
-      <div class="soins-section3-content">
-        <div class="soins-section3-body">
-          <h3>Accueil & Intention</h3>
-          <p>
-            Chaque séance débute par un court échange pour poser une intention,
-            créer un espace sécurisant, et permettre au corps et à l’esprit de
-            se préparer à l’expérience. 
-          </p>
-          <h3>Installation & Environnement </h3>
-          <p>
-            Vous êtes confortablement allongé(e), les yeux fermés, dans une
-            ambiance douce et enveloppante. L’environnement est soigneusement
-            préparé avec lumière tamisée, encens ou huiles essentielles si
-            souhaité. 
-          </p>
-          <h3>Voyage au cœur des sons </h3>
-          <p>
-            La praticienne utilise différents instruments pour produire des
-            fréquences variées qui vous guident dans un état de conscience
-            modifiée. Vous pouvez ressentir les sons vibrer dans tout le corps,
-            comme un massage énergétique subtil. 
-          </p>
-          <h3>Intégration & Retour </h3>
-          <p>
-            À la fin du voyage, un temps de silence permet d’intégrer les
-            ressentis. Un échange peut suivre, si vous souhaitez verbaliser vos
-            impressions ou poser des questions. 
-          </p>
-        </div>
-        <div class="soins-section3-gallery">
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonoregallery1.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/voyagesonoregallery1.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonoregallery1.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="./Images/Desktop/voyagesonoregallery2.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="./Images/Mobile/voyagesonoregallery2.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonoregallery2.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture class="span2">
-            <source
-              srcset="./Images/Desktop/voyagesonoregallery3.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/voyagesonoregallery3.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/voyagesonoregallery3.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-        </div>
-      </div>
-      <picture class="section1__flower">
-        <source
-          srcset="./Images/Desktop/fleurssection1.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection1mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection1mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section2"></div>
-    </section>
-    <section class="soins-section4 warning-section4">
-      <h2>Prenez un moment pour vous</h2>
-      <div class="soins-section4__content">
-        <picture class="soins-section4__image">
-          <source
-            srcset="./Images/Desktop/bols.webp"
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-          <source srcset="Images/Mobile/bols.webp" type="image/webp" />
-          <img
-            src="./Images/Mobile/bols.webp"
-            alt="Bols tibétains sonothérapie Soins Essentiels"
-          />
-        </picture>
-        <div class="soins-section4__body">
-          <p>
-            Prêt pour retrouver votre équilibre et votre sérénité ! Réservez dès
-            maintenant votre séance de soin énergétique et laissez-vous guider
-            vers un bien-être profond et revitalisant. Offrez-vous un moment de
-            détente unique pour libérer vos tensions, harmoniser votre énergie
-            et retrouver toute votre vitalité. Chaque séance est une invitation
-            à vous reconnecter à vous-même et à cultiver un mieux-être durable
-            au quotidien.
-          </p>
-          <div class="soins-section4__button">
-            <a href="#" class="button">En Savoir Plus</a>
-          </div>
-        </div>
-      </div>
-      <img
-        class="soins-section4__flower-bottom"
-        src="./Images/Desktop/motiffleures.png"
-        alt="Motif floral Soins Essentiels"
-      />
+          </li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
+        </ul>
+        <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+      </nav>
+    </div>
 
-      <img
-        class="soins-section4__flower-top"
-        src="./Images/Desktop/motiffleures.png"
-        alt="Motif floral Soins Essentiels"
-      />
-    </section>
-    <footer>
-      <div class="footer__content">
-        <div class="footer__menu">
-          <h3>Site Menu</h3>
+    <div class="soins-hero-banner">
+      <picture>
+        <source srcset="./Images/Desktop/voyagesonoreherobanner.webp" media="(min-width: 768px)" type="image/webp" />
+        <source srcset="./Images/Mobile/voyagesonoreherobanner.webp" type="image/webp" />
+        <img src="./Images/Mobile/voyagesonoreherobanner.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+      </picture>
+
+      <h1 class="soins-hero-banner-title voyage-sonore-title">Voyage Sonore</h1>
+      <div class="soins-wave-overlay"></div>
+    </div>
+  </header>
+  <section class="soins-section1">
+    <h2>À la découverte du Voyage Sonore</h2>
+    <div class="soins-section1-content">
+      <div class="soins-section1-body">
+        <p>
+          Fermez les yeux… Laissez-vous porter par les vibrations des bols
+          chantants, du tambour et des sons sacrés. Le temps s’arrête, le
+          corps se relâche, l’esprit s’envole. Bienvenue dans un voyage
+          sonore. Le voyage sonore est une expérience immersive de relaxation
+          profonde, guidée par les sons et les vibrations d’instruments
+          thérapeutiques tels que les bols chantants tibétains, tambour
+          chamanique, diapasons et koshi.  Le voyage sonore permet d’accéder à
+          des états modifiés de conscience de façon très facile et
+          sécuritaire.   Les vibrations traversent chaque cellule, libèrent
+          les tensions, calment le mental et favorisent une reconnexion à soi.
+          C’est une véritable méditation guidée par le son, qui invite au
+          lâcher-prise, à la détente et à l’harmonisation énergétique. 
+        </p>
+      </div>
+      <div class="soins-section1-image">
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonoresection1.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/voyagesonoresection1.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonoresection1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+      </div>
+    </div>
+    <picture class="section1__flower">
+      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section1"></div>
+  </section>
+  <section class="soins-warning">
+    <h2>
+      <i class="fa-solid fa-circle-exclamation"></i> À qui le voyage sonore ne
+      s’adresse pas ?
+    </h2>
+    <p>Gardez à l’esprit : VIBRATIONS et ÉTATS MODIFIÉS DE CONSCIENCE.</p>
+    <div class="soins-warning-content">
+      <div class="soins-warning-card1">
+        <h3>CONTRE-INDICATION ABSOLUE:</h3>
+        <ul>
+          <li>Épilepsie, déclenchée par les sons</li>
+          <li>
+            Troubles psychiatriques, y compris certains cas de dépression
+            sévère
+          </li>
+          <li>Phlébites, plaies, plaques d’athéromes, ...</li>
+          <li>Pacemaker, dispositif implanté, stents, ...</li>
+        </ul>
+      </div>
+      <div class="soins-warning-card2">
+        <h3>GRANDES PRÉCAUTIONS:</h3>
+        <ul>
+          <li>Troubles auditifs</li>
+          <li>Femmes enceintes</li>
+          <li>Bébés et touts petits</li>
+          <li>Toute personne présentant un état de santé particulier.</li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      En cas de doute, il est vivement recommandé de consulter un
+      professionnel de santé (médecin, spécialiste, etc.) avant de réserver
+      une séance
+    </p>
+    <picture class="section2__flower">
+      <source srcset="./Images/Desktop/flowersection2.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection2mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection2mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section2"></div>
+  </section>
+  <section class="soins-section2 warning-section2">
+    <h2>les Bienfaits !</h2>
+    <div class="soins-section2-content">
+      <div class="soins-section2-body">
+        <div class="soins-section2-text">
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Nos Soins</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Contact et Tarifs</a></li>
-            <li><a href="#">Conditions Générales d’Utilisation</a></li>
-            <li><a href="#">Mentions Légales</a></li>
+            <li>Apaisement global du système nerveux</li>
+            <li>Lâcher-prise mental et méditatif</li>
+            <li>Harmonisation énergétique subtile et globale</li>
+            <li>Stimulation de l’imaginaire et de l’intuition</li>
+            <li>Idéal pour retrouver un état de sérénité et de recentrage</li>
           </ul>
         </div>
-        <div class="footer__contact">
-          <h3>Contact</h3>
-          <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
-          <p>
-            Courriel :
-            <a href="mailto:soinsessentiels.fr@gmail.com"
-              >soinsessentiels.fr@gmail.com</a
-            >
-          </p>
-          <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
-          <p>Naviguer vers nous :</p>
-          <ul>
-            <li>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche"
-              >
-                <i class="fas fa-map-location-dot"></i> Google Maps
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche"
-              >
-                <i class="fas fa-map-location-dot"></i> Apple Plans
-              </a>
-            </li>
-            <li>
-              <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
-                <i class="fas fa-map-location-dot"></i> Waze
-              </a>
-            </li>
-          </ul>
+        <div class="soins-section2-button-wrapper">
+          <a href="./contact-tarifs.html#calendrier" class="button">Réservez une Séance</a>
         </div>
       </div>
-      <div class="footer__copyright">
-        <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
+      <div class="soins-section2-gallery">
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonorebenefit1.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/massagesonorebenefit1.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonorebenefit1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonorebenefit2.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/voyagesonorebenefit2.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonorebenefit2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonorebenefit3.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/voyagesonorebenefit3.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonorebenefit3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonorebenefit4.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/voyagesonorebenefit4.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonorebenefit4.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
       </div>
-    </footer>
-  </body>
+    </div>
+    <picture class="section2__flower">
+      <source srcset="./Images/Desktop/flowersection2.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection2mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection2mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section1"></div>
+  </section>
+  <section class="soins-section3 warning-section3">
+    <h2>Le Déroulement du voyage Sonore</h2>
+    <div class="soins-section3-content">
+      <div class="soins-section3-body">
+        <h3>Accueil & Intention</h3>
+        <p>
+          Chaque séance débute par un court échange pour poser une intention,
+          créer un espace sécurisant, et permettre au corps et à l’esprit de
+          se préparer à l’expérience. 
+        </p>
+        <h3>Installation & Environnement </h3>
+        <p>
+          Vous êtes confortablement allongé(e), les yeux fermés, dans une
+          ambiance douce et enveloppante. L’environnement est soigneusement
+          préparé avec lumière tamisée, encens ou huiles essentielles si
+          souhaité. 
+        </p>
+        <h3>Voyage au cœur des sons </h3>
+        <p>
+          La praticienne utilise différents instruments pour produire des
+          fréquences variées qui vous guident dans un état de conscience
+          modifiée. Vous pouvez ressentir les sons vibrer dans tout le corps,
+          comme un massage énergétique subtil. 
+        </p>
+        <h3>Intégration & Retour </h3>
+        <p>
+          À la fin du voyage, un temps de silence permet d’intégrer les
+          ressentis. Un échange peut suivre, si vous souhaitez verbaliser vos
+          impressions ou poser des questions. 
+        </p>
+      </div>
+      <div class="soins-section3-gallery">
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonoregallery1.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/voyagesonoregallery1.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonoregallery1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture>
+          <source srcset="./Images/Desktop/voyagesonoregallery2.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="./Images/Mobile/voyagesonoregallery2.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonoregallery2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture class="span2">
+          <source srcset="./Images/Desktop/voyagesonoregallery3.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/voyagesonoregallery3.webp" type="image/webp" />
+          <img src="./Images/Mobile/voyagesonoregallery3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+      </div>
+    </div>
+    <picture class="section1__flower">
+      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section2"></div>
+  </section>
+  <section class="soins-section4 warning-section4">
+    <h2>Prenez un moment pour vous</h2>
+    <div class="soins-section4__content">
+      <picture class="soins-section4__image">
+        <source srcset="./Images/Desktop/bols.webp" media="(min-width: 768px)" type="image/webp" />
+        <source srcset="Images/Mobile/bols.webp" type="image/webp" />
+        <img src="./Images/Mobile/bols.webp" alt="Bols tibétains sonothérapie Soins Essentiels" />
+      </picture>
+      <div class="soins-section4__body">
+        <p>
+          Prêt pour retrouver votre équilibre et votre sérénité ! Réservez dès
+          maintenant votre séance de soin énergétique et laissez-vous guider
+          vers un bien-être profond et revitalisant. Offrez-vous un moment de
+          détente unique pour libérer vos tensions, harmoniser votre énergie
+          et retrouver toute votre vitalité. Chaque séance est une invitation
+          à vous reconnecter à vous-même et à cultiver un mieux-être durable
+          au quotidien.
+        </p>
+        <div class="soins-section4__button">
+          <a href="#" class="button">En Savoir Plus</a>
+        </div>
+      </div>
+    </div>
+    <img class="soins-section4__flower-bottom" src="./Images/Desktop/motiffleures.png"
+      alt="Motif floral Soins Essentiels" />
+
+    <img class="soins-section4__flower-top" src="./Images/Desktop/motiffleures.png"
+      alt="Motif floral Soins Essentiels" />
+  </section>
+  <footer>
+    <div class="footer__content">
+      <div class="footer__menu">
+        <h3>Site Menu</h3>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Nos Soins</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact et Tarifs</a></li>
+          <li><a href="#">Conditions Générales d’Utilisation</a></li>
+          <li><a href="#">Mentions Légales</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Contact</h3>
+        <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
+        <p>
+          Courriel :
+          <a href="mailto:soinsessentiels.fr@gmail.com">soinsessentiels.fr@gmail.com</a>
+        </p>
+        <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
+        <p>Naviguer vers nous :</p>
+        <ul>
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche">
+              <i class="fas fa-map-location-dot"></i> Google Maps
+            </a>
+          </li>
+          <li>
+            <a href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche">
+              <i class="fas fa-map-location-dot"></i> Apple Plans
+            </a>
+          </li>
+          <li>
+            <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
+              <i class="fas fa-map-location-dot"></i> Waze
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
 </html>

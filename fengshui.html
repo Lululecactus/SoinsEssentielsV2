@@ -1,406 +1,287 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>consultation feng-shui</title>
-    <!-- Fonts Google : Playfair Display SC & Montserrat -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Feuille de style principale -->
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>consultation feng-shui</title>
+  <!-- Fonts Google : Playfair Display SC & Montserrat -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- FontAwesome 6.6.0 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- script JS  -->
+  <script src="script.js" defer></script>
 
-    <!-- Favicon -->
-    <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
-    <meta
-      name="msapplication-TileImage"
-      content="./Images/Mobile/favicon-144x144.png"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="nav-bar">
-        <div class="nav-bar__branding">
-          <a href="./index.html">
-            <img
-              src="./Images/Mobile/lgog1.png"
-              alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
-            />
-          </a>
-          <a href="./index.html">
-            <p>Soins Essentiels</p>
-          </a>
-        </div>
-        <nav>
-          <ul class="nav-bar__main-menu">
-            <li><a href="./index.html">Accueil</a></li>
-            <li>
-              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-              <ul class="nav-bar__sub-menu">
-                <li>
-                  <a href="./soin-energetique.html">Soin Énergétique</a>
-                </li>
-                <li>
-                  <a href="./lithotherapie.html">Séance de Lithothérapie</a>
-                </li>
-                <li>
-                  <a href="./massagesonore.html"
-                    >Massage Sonore aux Bols Chantants Tibétains</a
-                  >
-                </li>
-                <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
-                <li><a href="./purification.html">Purification de Lieux</a></li>
-                <li>
-                  <a href="./fengshui.html" class="nav-bar__main-menu--active"
-                    >Conseils en Feng-Shui</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
-          </ul>
-          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-        </nav>
+  <!-- FontAwesome 6.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
+  <meta name="msapplication-TileImage" content="./Images/Mobile/favicon-144x144.png" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="nav-bar__branding">
+        <a href="./index.html">
+          <img src="./Images/Mobile/lgog1.png" alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours" />
+        </a>
+        <a href="./index.html">
+          <p>Soins Essentiels</p>
+        </a>
       </div>
-
-      <div class="soins-hero-banner">
-        <picture>
-          <source
-            srcset="./Images/Desktop/fengshuiherobanner.webp"
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="./Images/Mobile/fengshuiherobanner.webp"
-            type="image/webp"
-          />
-          <img
-            src="./Images/Mobile/fengshuiherobanner.webp"
-            alt="Marilyn Kulpa soin énergétique La Riche"
-          />
-        </picture>
-
-        <h1 class="soins-hero-banner-title">consultation feng-shui</h1>
-        <div class="soins-wave-overlay"></div>
-      </div>
-    </header>
-    <section class="soins-section1">
-      <h2>À la découverte de la consultation feng-shui</h2>
-      <div class="soins-section1-content">
-        <div class="soins-section1-body">
-          <p>
-            Le Feng Shui est la discipline qui vise à harmoniser l’énergie d’un
-            lieu de vie ou de travail. En rééquilibrant l’espace, on améliore
-            naturellement le bien-être, la vitalité et la qualité de vie de ses
-            occupants.  Cette prestation s’adresse à toute personne souhaitant
-            améliorer son bien-être chez soi, mais aussi aux thérapeutes,
-            entrepreneurs, indépendants ou familles. 
-          </p>
-        </div>
-        <div class="soins-section1-image">
-          <picture>
-            <source
-              srcset="./Images/Desktop/fengshuisection1.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/fengshuisection1.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/fengshuisection1.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-        </div>
-      </div>
-      <picture class="section1__flower">
-        <source
-          srcset="./Images/Desktop/fleurssection1.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection1mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection1mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section1"></div>
-    </section>
-    <section class="soins-section2">
-      <h2>les Bienfaits !</h2>
-      <div class="soins-section2-content">
-        <div class="soins-section2-body">
-          <div class="soins-section2-text">
-            <ul>
-              <li>Pour soutenir vos intentions</li>
-              <li>Amélioration de la circulation énergétique</li>
-              <li>Harmonisation de votre espace de vie</li>
-              <li>Réagencement du lieu de vie ou de travail</li>
-              <li>Renforcement de l'équilibre global</li>
+      <nav>
+        <ul class="nav-bar__main-menu">
+          <li><a href="./index.html">Accueil</a></li>
+          <li>
+            <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="nav-bar__sub-menu">
+              <li>
+                <a href="./soin-energetique.html">Soin Énergétique</a>
+              </li>
+              <li>
+                <a href="./lithotherapie.html">Séance de Lithothérapie</a>
+              </li>
+              <li>
+                <a href="./massagesonore.html">Massage Sonore aux Bols Chantants Tibétains</a>
+              </li>
+              <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
+              <li><a href="./purification.html">Purification de Lieux</a></li>
+              <li>
+                <a href="./fengshui.html" class="nav-bar__main-menu--active">Conseils en Feng-Shui</a>
+              </li>
             </ul>
-          </div>
-          <div class="soins-section2-button-wrapper">
-            <a href="#" class="button">Réservez une Séance</a>
-          </div>
-        </div>
-        <div class="soins-section2-gallery fengshui-gallery">
-          <picture>
-            <source
-              srcset="./Images/Desktop/fengshuibenefit.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/fengshuibenefit.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/fengshuibenefit.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-        </div>
-      </div>
-      <picture class="section2__flower">
-        <source
-          srcset="./Images/Desktop/flowersection2.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection2mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection2mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section2"></div>
-    </section>
-    <section class="soins-section3">
-      <h2>Le Déroulement de la consultation feng-shui</h2>
-      <div class="soins-section3-content">
-        <div class="soins-section3-body">
-          <h3>Échange initial</h3>
-          <p>
-            Nous commençons par une discussion pour identifier vos besoins, vos
-            ressentis dans le lieu, et vos attentes (sommeil agité, tensions
-            dans une pièce, fatigue inexpliquée, etc.). 
-          </p>
-          <h3>Analyse du lieu</h3>
-          <p>
-            À distance (à partir d’un plan et de photos) ou sur place,
-            j’identifie les perturbations énergétiques : 
-          </p>
-          <ul>
-            <li>Réseaux telluriques</li>
-            <li>Pollutions électromagnétiques </li>
-            <li>Circulation déséquilibrée du chi (énergie) </li>
-            <li>Désordre ou surcharge visuelle </li>
-          </ul>
-          <h3>Recommandations personnalisées</h3>
-          <p>
-            Je vous propose des ajustements simples et accessibles selon les
-            principes du Feng Shui : 
-          </p>
-          <ul>
-            <li>Agencement du mobilier </li>
-            <li>Couleurs adaptées à la fonction de chaque pièce </li>
-            <li>
-              Utilisation d’éléments naturels (plantes, symboles, lumière…) 
-            </li>
-            <li>Nettoyage énergétique ou symbolique si nécessaire </li>
-          </ul>
-          <h3>Reconnexion & Circulation </h3>
-          <p>
-            L’énergie du lieu est fluidifiée grâce à des gestes, sons ou
-            intentions qui favorisent la paix, la clarté et la vitalité dans
-            l’espace. 
-          </p>
-          <h3>Restitution claire</h3>
-          <p>
-            Vous recevez un compte-rendu avec des conseils pratiques à mettre en
-            œuvre à votre rythme. 
-          </p>
-        </div>
-        <div class="soins-section3-gallery">
-          <picture>
-            <source
-              srcset="./Images/Desktop/fengshuigallery1.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/fengshuigallery1.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/fengshuigallery1.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="./Images/Desktop/fengshuigallery2.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="./Images/Mobile/fengshuigallery2.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/fengshuigallery2.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-          <picture class="span2">
-            <source
-              srcset="./Images/Desktop/fengshuigallery3.webp"
-              media="(min-width: 768px)"
-              type="image/webp"
-            />
-            <source
-              srcset="Images/Mobile/fengshuigallery3.webp"
-              type="image/webp"
-            />
-            <img
-              src="./Images/Mobile/fengshuigallery3.webp"
-              alt="Marilyn Kulpa soin énergétique La Riche"
-            />
-          </picture>
-        </div>
-      </div>
-      <picture class="section1__flower">
-        <source
-          srcset="./Images/Desktop/fleurssection1.png"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./Images/Mobile/flowersection1mobile.png"
-          type="image/webp"
-        />
-        <img
-          src="./Images/Mobile/flowersection1mobile.png"
-          alt="Motif floral Soins Essentiels"
-        />
-      </picture>
-      <div class="soins-wave-overlay soins-wave-section1"></div>
-    </section>
-    <section class="soins-section4">
-      <h2>Prenez un moment pour vous</h2>
-      <div class="soins-section4__content">
-        <picture class="soins-section4__image">
-          <source
-            srcset="./Images/Desktop/bols.webp"
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-          <source srcset="Images/Mobile/bols.webp" type="image/webp" />
-          <img
-            src="./Images/Mobile/bols.webp"
-            alt="Bols tibétains sonothérapie Soins Essentiels"
-          />
-        </picture>
-        <div class="soins-section4__body">
-          <p>
-            Prêt pour retrouver votre équilibre et votre sérénité ! Réservez dès
-            maintenant votre séance de soin énergétique et laissez-vous guider
-            vers un bien-être profond et revitalisant. Offrez-vous un moment de
-            détente unique pour libérer vos tensions, harmoniser votre énergie
-            et retrouver toute votre vitalité. Chaque séance est une invitation
-            à vous reconnecter à vous-même et à cultiver un mieux-être durable
-            au quotidien.
-          </p>
-          <div class="soins-section4__button">
-            <a href="#" class="button">En Savoir Plus</a>
-          </div>
-        </div>
-      </div>
-      <img
-        class="soins-section4__flower-bottom"
-        src="./Images/Desktop/motiffleures.png"
-        alt="Motif floral Soins Essentiels"
-      />
+          </li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
+        </ul>
+        <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+      </nav>
+    </div>
 
-      <img
-        class="soins-section4__flower-top"
-        src="./Images/Desktop/motiffleures.png"
-        alt="Motif floral Soins Essentiels"
-      />
-    </section>
-    <footer>
-      <div class="footer__content">
-        <div class="footer__menu">
-          <h3>Site Menu</h3>
+    <div class="soins-hero-banner">
+      <picture>
+        <source srcset="./Images/Desktop/fengshuiherobanner.webp" media="(min-width: 768px)" type="image/webp" />
+        <source srcset="./Images/Mobile/fengshuiherobanner.webp" type="image/webp" />
+        <img src="./Images/Mobile/fengshuiherobanner.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+      </picture>
+
+      <h1 class="soins-hero-banner-title">consultation feng-shui</h1>
+      <div class="soins-wave-overlay"></div>
+    </div>
+  </header>
+  <section class="soins-section1">
+    <h2>À la découverte de la consultation feng-shui</h2>
+    <div class="soins-section1-content">
+      <div class="soins-section1-body">
+        <p>
+          Le Feng Shui est la discipline qui vise à harmoniser l’énergie d’un
+          lieu de vie ou de travail. En rééquilibrant l’espace, on améliore
+          naturellement le bien-être, la vitalité et la qualité de vie de ses
+          occupants.  Cette prestation s’adresse à toute personne souhaitant
+          améliorer son bien-être chez soi, mais aussi aux thérapeutes,
+          entrepreneurs, indépendants ou familles. 
+        </p>
+      </div>
+      <div class="soins-section1-image">
+        <picture>
+          <source srcset="./Images/Desktop/fengshuisection1.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/fengshuisection1.webp" type="image/webp" />
+          <img src="./Images/Mobile/fengshuisection1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+      </div>
+    </div>
+    <picture class="section1__flower">
+      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section1"></div>
+  </section>
+  <section class="soins-section2">
+    <h2>les Bienfaits !</h2>
+    <div class="soins-section2-content">
+      <div class="soins-section2-body">
+        <div class="soins-section2-text">
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Nos Soins</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Contact et Tarifs</a></li>
-            <li><a href="#">Conditions Générales d’Utilisation</a></li>
-            <li><a href="#">Mentions Légales</a></li>
+            <li>Pour soutenir vos intentions</li>
+            <li>Amélioration de la circulation énergétique</li>
+            <li>Harmonisation de votre espace de vie</li>
+            <li>Réagencement du lieu de vie ou de travail</li>
+            <li>Renforcement de l'équilibre global</li>
           </ul>
         </div>
-        <div class="footer__contact">
-          <h3>Contact</h3>
-          <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
-          <p>
-            Courriel :
-            <a href="mailto:soinsessentiels.fr@gmail.com"
-              >soinsessentiels.fr@gmail.com</a
-            >
-          </p>
-          <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
-          <p>Naviguer vers nous :</p>
-          <ul>
-            <li>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche"
-              >
-                <i class="fas fa-map-location-dot"></i> Google Maps
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche"
-              >
-                <i class="fas fa-map-location-dot"></i> Apple Plans
-              </a>
-            </li>
-            <li>
-              <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
-                <i class="fas fa-map-location-dot"></i> Waze
-              </a>
-            </li>
-          </ul>
+        <div class="soins-section2-button-wrapper">
+          <a href="./contact-tarifs.html#calendrier" class="button">Réservez une Séance</a>
         </div>
       </div>
-      <div class="footer__copyright">
-        <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
+      <div class="soins-section2-gallery fengshui-gallery">
+        <picture>
+          <source srcset="./Images/Desktop/fengshuibenefit.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/fengshuibenefit.webp" type="image/webp" />
+          <img src="./Images/Mobile/fengshuibenefit.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
       </div>
-    </footer>
-  </body>
+    </div>
+    <picture class="section2__flower">
+      <source srcset="./Images/Desktop/flowersection2.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection2mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection2mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section2"></div>
+  </section>
+  <section class="soins-section3">
+    <h2>Le Déroulement de la consultation feng-shui</h2>
+    <div class="soins-section3-content">
+      <div class="soins-section3-body">
+        <h3>Échange initial</h3>
+        <p>
+          Nous commençons par une discussion pour identifier vos besoins, vos
+          ressentis dans le lieu, et vos attentes (sommeil agité, tensions
+          dans une pièce, fatigue inexpliquée, etc.). 
+        </p>
+        <h3>Analyse du lieu</h3>
+        <p>
+          À distance (à partir d’un plan et de photos) ou sur place,
+          j’identifie les perturbations énergétiques : 
+        </p>
+        <ul>
+          <li>Réseaux telluriques</li>
+          <li>Pollutions électromagnétiques </li>
+          <li>Circulation déséquilibrée du chi (énergie) </li>
+          <li>Désordre ou surcharge visuelle </li>
+        </ul>
+        <h3>Recommandations personnalisées</h3>
+        <p>
+          Je vous propose des ajustements simples et accessibles selon les
+          principes du Feng Shui : 
+        </p>
+        <ul>
+          <li>Agencement du mobilier </li>
+          <li>Couleurs adaptées à la fonction de chaque pièce </li>
+          <li>
+            Utilisation d’éléments naturels (plantes, symboles, lumière…) 
+          </li>
+          <li>Nettoyage énergétique ou symbolique si nécessaire </li>
+        </ul>
+        <h3>Reconnexion & Circulation </h3>
+        <p>
+          L’énergie du lieu est fluidifiée grâce à des gestes, sons ou
+          intentions qui favorisent la paix, la clarté et la vitalité dans
+          l’espace. 
+        </p>
+        <h3>Restitution claire</h3>
+        <p>
+          Vous recevez un compte-rendu avec des conseils pratiques à mettre en
+          œuvre à votre rythme. 
+        </p>
+      </div>
+      <div class="soins-section3-gallery">
+        <picture>
+          <source srcset="./Images/Desktop/fengshuigallery1.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/fengshuigallery1.webp" type="image/webp" />
+          <img src="./Images/Mobile/fengshuigallery1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture>
+          <source srcset="./Images/Desktop/fengshuigallery2.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="./Images/Mobile/fengshuigallery2.webp" type="image/webp" />
+          <img src="./Images/Mobile/fengshuigallery2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+        <picture class="span2">
+          <source srcset="./Images/Desktop/fengshuigallery3.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="Images/Mobile/fengshuigallery3.webp" type="image/webp" />
+          <img src="./Images/Mobile/fengshuigallery3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+        </picture>
+      </div>
+    </div>
+    <picture class="section1__flower">
+      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
+      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
+    </picture>
+    <div class="soins-wave-overlay soins-wave-section1"></div>
+  </section>
+  <section class="soins-section4">
+    <h2>Prenez un moment pour vous</h2>
+    <div class="soins-section4__content">
+      <picture class="soins-section4__image">
+        <source srcset="./Images/Desktop/bols.webp" media="(min-width: 768px)" type="image/webp" />
+        <source srcset="Images/Mobile/bols.webp" type="image/webp" />
+        <img src="./Images/Mobile/bols.webp" alt="Bols tibétains sonothérapie Soins Essentiels" />
+      </picture>
+      <div class="soins-section4__body">
+        <p>
+          Prêt pour retrouver votre équilibre et votre sérénité ! Réservez dès
+          maintenant votre séance de soin énergétique et laissez-vous guider
+          vers un bien-être profond et revitalisant. Offrez-vous un moment de
+          détente unique pour libérer vos tensions, harmoniser votre énergie
+          et retrouver toute votre vitalité. Chaque séance est une invitation
+          à vous reconnecter à vous-même et à cultiver un mieux-être durable
+          au quotidien.
+        </p>
+        <div class="soins-section4__button">
+          <a href="#" class="button">En Savoir Plus</a>
+        </div>
+      </div>
+    </div>
+    <img class="soins-section4__flower-bottom" src="./Images/Desktop/motiffleures.png"
+      alt="Motif floral Soins Essentiels" />
+
+    <img class="soins-section4__flower-top" src="./Images/Desktop/motiffleures.png"
+      alt="Motif floral Soins Essentiels" />
+  </section>
+  <footer>
+    <div class="footer__content">
+      <div class="footer__menu">
+        <h3>Site Menu</h3>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Nos Soins</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact et Tarifs</a></li>
+          <li><a href="#">Conditions Générales d’Utilisation</a></li>
+          <li><a href="#">Mentions Légales</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Contact</h3>
+        <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
+        <p>
+          Courriel :
+          <a href="mailto:soinsessentiels.fr@gmail.com">soinsessentiels.fr@gmail.com</a>
+        </p>
+        <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
+        <p>Naviguer vers nous :</p>
+        <ul>
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche">
+              <i class="fas fa-map-location-dot"></i> Google Maps
+            </a>
+          </li>
+          <li>
+            <a href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche">
+              <i class="fas fa-map-location-dot"></i> Apple Plans
+            </a>
+          </li>
+          <li>
+            <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
+              <i class="fas fa-map-location-dot"></i> Waze
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
