@@ -8,10 +8,14 @@ burgerMenu.addEventListener("click", () => {
   body.classList.toggle("menu-open");
 });
 
-
 // Animation slide-in pour mobile
 window.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth <= 768) {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const hasHash = window.location.hash; // ex: #calendar
+
+  if (isMobile && !hasHash) {
+    // Forcer un reflow pour Safari
+    void document.body.offsetWidth;
     document.body.classList.add("page-slide-in");
   }
 });
