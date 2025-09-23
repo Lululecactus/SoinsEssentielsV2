@@ -2212,7 +2212,7 @@ footer {
 /* Animation seulement pour écrans <= 768px */
 @media (max-width: 768px) {
     .page-slide-in {
-        animation: slideInFromRight 0.6s ease forwards;
+        animation: slideInFromRight 0.6s ease-in-out;
     }
 }
 

@@ -8,14 +8,17 @@ burgerMenu.addEventListener("click", () => {
   body.classList.toggle("menu-open");
 });
 
-// Animation slide-in pour mobile
+// Animation slide-in pour mobile sauf homepage
 window.addEventListener("DOMContentLoaded", () => {
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
   const hasHash = window.location.hash; // ex: #calendar
+  const isHome =
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("index.html");
 
-  if (isMobile && !hasHash) {
+  if (isMobile && !hasHash && !isHome) {
     // Forcer un reflow pour Safari
     void document.body.offsetWidth;
-    document.body.classList.add("page-slide-in");
+    body.classList.add("page-slide-in");
   }
 });
