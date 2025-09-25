@@ -1195,6 +1195,10 @@ footer {
     -webkit-backdrop-filter: blur(14px);
 }
 
+.voyage-sonore-title{
+    color: #fff;
+}
+
 
 /* Reflet lumineux doré */
 .soins-hero-banner-title::before {
