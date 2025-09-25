@@ -23,3 +23,15 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector(".soins-section1");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        section.classList.add("in-view");
+      }
+    });
+  }, { threshold: 0.5 }); // déclenche à 30% visible
+
+  observer.observe(section);
+});

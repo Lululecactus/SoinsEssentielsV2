@@ -2227,3 +2227,19 @@ footer {
         opacity: 1;
     }
 }
+
+
+
+@media (max-width: 767.98px) {
+  .soins-section1-image {
+    opacity: 0;
+    transform: translateY(-30px); /* commence légèrement au-dessus */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+  /* Classe ajoutée quand la section entre dans le viewport */
+  .soins-section1.in-view .soins-section1-image {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
