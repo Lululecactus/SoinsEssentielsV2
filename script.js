@@ -8,17 +8,21 @@ burgerMenu.addEventListener("click", () => {
   body.classList.toggle("menu-open");
 });
 
-// Animation slide-in pour mobile sauf homepage
 window.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
-  const hasHash = window.location.hash; // ex: #calendar
-  const isHome =
-    window.location.pathname === "/" ||
-    window.location.pathname.endsWith("index.html");
+  const hasHash = Boolean(window.location.hash);
+  const pathname = window.location.pathname.replace(/\/+$/, ""); // enlève slash final
+  const isHome = pathname === "" ||
+                 pathname === "/" ||
+                 /(^|\/)index\.(html?|php)$/.test(pathname);
 
-  if (isMobile && !hasHash && !isHome) {
-    // Forcer un reflow pour Safari
-    void document.body.offsetWidth;
-    body.classList.add("page-slide-in");
-  }
+  console.log("slide-in check:", { pathname, isHome, hasHash, referrer: document.referrer, isMobile });
+
+  if (!isMobile || hasHash || isHome) return;
+
+  // Forcer reflow (Safari)
+  void body.offsetWidth;
+  document.body.classList.add("page-slide-in");
 });
+
