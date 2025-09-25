@@ -1338,7 +1338,7 @@ footer {
 
 /* SOINS SECTION WARNING */
 .soins-warning {
-    background-color: #D9D9D9;
+    background-color: #F4E5DB;
 }
 
 .soins-warning p {
@@ -1401,10 +1401,6 @@ footer {
 
 .soins-section2 {
     background-color: #D9D9D9;
-}
-
-.warning-section2 {
-    background-color: #F4E5DB;
 }
 
 .soins-section2 h2 {
