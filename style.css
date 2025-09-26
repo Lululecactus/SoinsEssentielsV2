@@ -2250,8 +2250,8 @@ footer {
   .soins-section2-gallery picture {
     display: inline-block; /* ou block si tu veux un layout vertical */
     opacity: 0;
-    transform: scale(0.3); /* commence plus petit */
-    transition: transform 0.8s ease-in-out, opacity 0.6s ease-in-out;
+    transform: scale(0.75); /* commence plus petit */
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
   }
 
   /* Classe ajoutée quand la section est visible */
