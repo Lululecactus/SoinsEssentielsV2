@@ -2233,7 +2233,7 @@ footer {
 @media (max-width: 767.98px) {
   .soins-section1-image {
     opacity: 0;
-    transform: translateY(-100px); /* commence légèrement au-dessus */
+    transform: translateY(-80%); /* commence légèrement au-dessus */
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
 
@@ -2248,10 +2248,9 @@ footer {
 
 @media (max-width: 767.98px) {
   .soins-section2-gallery picture {
-    display: inline-block; /* ou block si tu veux un layout vertical */
     opacity: 0;
     transform: scale(0.75); /* commence plus petit */
-    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
 
   /* Classe ajoutée quand la section est visible */

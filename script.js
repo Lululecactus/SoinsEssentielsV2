@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.add("in-view");
       }
     });
-  }, { threshold: 0.4 }); // déclenche à 30% visible
+  }, { threshold: 0.45 }); // déclenche à 30% visible
 
   observer.observe(section);
 });
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         section2.classList.add("in-view");
       }
     });
-  }, { threshold: 0.4 }); // déclenche quand 30% de la section est visible
+  }, { threshold: 0.5 }); // déclenche quand 30% de la section est visible
 
   observer.observe(section2);
 });
