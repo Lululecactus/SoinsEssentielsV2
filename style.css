@@ -2233,13 +2233,30 @@ footer {
 @media (max-width: 767.98px) {
   .soins-section1-image {
     opacity: 0;
-    transform: translateY(-30px); /* commence légèrement au-dessus */
-    transition: transform 1s ease-out, opacity 1s ease-out;
+    transform: translateY(-100px); /* commence légèrement au-dessus */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
 
   /* Classe ajoutée quand la section entre dans le viewport */
   .soins-section1.in-view .soins-section1-image {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .soins-section2-gallery picture {
+    display: inline-block; /* ou block si tu veux un layout vertical */
+    opacity: 0;
+    transform: scale(0.3); /* commence plus petit */
+    transition: transform 0.8s ease-in-out, opacity 0.6s ease-in-out;
+  }
+
+  /* Classe ajoutée quand la section est visible */
+  .soins-section2.in-view .soins-section2-gallery picture {
+    opacity: 1;
+    transform: scale(1); /* taille normale */
   }
 }

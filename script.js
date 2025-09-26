@@ -31,7 +31,23 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.add("in-view");
       }
     });
-  }, { threshold: 0.5 }); // déclenche à 30% visible
+  }, { threshold: 0.4 }); // déclenche à 30% visible
 
   observer.observe(section);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const section2 = document.querySelector(".soins-section2");
+  if (!section2) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        section2.classList.add("in-view");
+      }
+    });
+  }, { threshold: 0.4 }); // déclenche quand 30% de la section est visible
+
+  observer.observe(section2);
 });
