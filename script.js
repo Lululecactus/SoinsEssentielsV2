@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.add("page-slide-in");
   }
 
-  // --- Fonction utilitaire pour IntersectionObserver ---
+  // --- Fonction utilitaire IntersectionObserver ---
   const observeElement = (element, className, options = {}) => {
     if (!element) return;
     const observer = new IntersectionObserver((entries, obs) => {
@@ -30,22 +30,24 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(element);
   };
 
-  // --- Section 1 : observer la section entière ---
-  const section1 = document.querySelector(".soins-section1");
-  observeElement(section1, "in-view", {
-    threshold: 0.5, // déclenche quand 50% visible
-    rootMargin: "0px 0px 0px 0px",
-  });
-
-  // --- Section 2 : observer chaque image de la galerie ---
-  const section2 = document.querySelector(".soins-section2");
-  if (section2) {
-    const pics = section2.querySelectorAll(".soins-section2-gallery picture");
-    pics.forEach((pic) => {
-      observeElement(pic, "in-view", {
-        threshold: 0.5, // déclenche quand 50% visible
-        rootMargin: "0px 0px 0px 0px",
-      });
+  // --- Section 1 : observer l'image ---
+  const section1Image = document.querySelector(".soins-section1-image");
+  if (section1Image) {
+    observeElement(section1Image, "in-view", {
+      threshold: 0.1,
+      rootMargin: "0px 0px -500px 0px" // déclenche plus tard
     });
   }
+
+  // --- Sections avec galerie (section 2 et 3) ---
+  const gallerySections = document.querySelectorAll(".soins-section2, .soins-section3");
+  gallerySections.forEach((section) => {
+    const pics = section.querySelectorAll(".soins-section2-gallery picture, .soins-section3-gallery picture");
+    pics.forEach((pic) => {
+      observeElement(pic, "in-view", {
+        threshold: 0.5,
+        rootMargin: "0px 0px -100px 0px"
+      });
+    });
+  });
 });

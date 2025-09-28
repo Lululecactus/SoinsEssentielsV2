@@ -2209,57 +2209,34 @@ footer {
 }
 
 
-/* Animation seulement pour écrans <= 768px */
-@media (max-width: 768px) {
-    .page-slide-in {
-        animation: slideInFromRight 0.6s ease-in-out;
-    }
-}
-
-/* --- Animation page slide-in si tu l'utilises --- */
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* --- Section 1 : image descend du haut et fade-in --- */
 @media (max-width: 767.98px) {
+
+    /* Section 1 : image descend du haut */
     .soins-section1-image {
         display: block;
-        /* Chrome mobile / Safari */
         opacity: 0;
         transform: translateY(-80%);
         transition: transform 1s ease-in-out, opacity 1s ease-in-out;
         will-change: transform, opacity;
     }
 
-    .soins-section1.in-view .soins-section1-image {
+    .soins-section1-image.in-view {
         opacity: 1;
         transform: translateY(0);
     }
-}
 
-
-
-/* --- Section 2 : images zoom-in --- */
-@media (max-width: 767.98px) {
-    .soins-section2-gallery picture {
+    /* Sections 2 et 3 : images zoom-in */
+    .soins-section2-gallery picture,
+    .soins-section3-gallery picture {
         display: block;
-        /* Chrome mobile / Safari */
         opacity: 0;
         transform: scale(0.75);
         transition: transform 0.6s ease-out, opacity 0.6s ease-out;
         will-change: transform, opacity;
     }
 
-    .soins-section2-gallery picture.in-view {
+    .soins-section2-gallery picture.in-view,
+    .soins-section3-gallery picture.in-view {
         opacity: 1;
         transform: scale(1);
     }
