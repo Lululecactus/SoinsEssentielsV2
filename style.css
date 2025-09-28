@@ -1195,7 +1195,7 @@ footer {
     -webkit-backdrop-filter: blur(14px);
 }
 
-.voyage-sonore-title{
+.voyage-sonore-title {
     color: #fff;
 }
 
@@ -2216,6 +2216,7 @@ footer {
     }
 }
 
+/* --- Animation page slide-in si tu l'utilises --- */
 @keyframes slideInFromRight {
     0% {
         transform: translateX(100%);
@@ -2228,34 +2229,38 @@ footer {
     }
 }
 
-
-
+/* --- Section 1 : image descend du haut et fade-in --- */
 @media (max-width: 767.98px) {
-  .soins-section1-image {
-    opacity: 0;
-    transform: translateY(-80%); /* commence légèrement au-dessus */
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  }
+    .soins-section1-image {
+        display: block;
+        /* Chrome mobile / Safari */
+        opacity: 0;
+        transform: translateY(-80%);
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        will-change: transform, opacity;
+    }
 
-  /* Classe ajoutée quand la section entre dans le viewport */
-  .soins-section1.in-view .soins-section1-image {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .soins-section1.in-view .soins-section1-image {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
 
+/* --- Section 2 : images zoom-in --- */
 @media (max-width: 767.98px) {
-  .soins-section2-gallery picture {
-    opacity: 0;
-    transform: scale(0.75); /* commence plus petit */
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  }
+    .soins-section2-gallery picture {
+        display: block;
+        /* Chrome mobile / Safari */
+        opacity: 0;
+        transform: scale(0.75);
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        will-change: transform, opacity;
+    }
 
-  /* Classe ajoutée quand la section est visible */
-  .soins-section2.in-view .soins-section2-gallery picture {
-    opacity: 1;
-    transform: scale(1); /* taille normale */
-  }
+    .soins-section2-gallery picture.in-view {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
