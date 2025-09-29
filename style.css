@@ -2241,3 +2241,24 @@ footer {
         transform: scale(1);
     }
 }
+
+
+
+/* Animation seulement pour écrans <= 768px */
+@media (max-width: 768px) {
+    .page-slide-in {
+        animation: slideInFromRight 0.6s ease-in-out;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

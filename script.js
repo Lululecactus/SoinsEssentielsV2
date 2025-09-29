@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (section1Image) {
     observeElement(section1Image, "in-view", {
       threshold: 0.1,
-      rootMargin: "0px 0px -500px 0px" // déclenche plus tard
+      rootMargin: "0px 0px -250px 0px" // déclenche plus tard
     });
   }
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pics.forEach((pic) => {
       observeElement(pic, "in-view", {
         threshold: 0.5,
-        rootMargin: "0px 0px -100px 0px"
+        rootMargin: "0px 0px -50px 0px"
       });
     });
   });
