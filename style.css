@@ -2262,3 +2262,34 @@ footer {
         opacity: 1;
     }
 }
+
+
+/* PADE ABOUT  */
+/* PAGE ABOUT HEADER */
+.about-hero img{
+    object-fit: contain;
+    object-position: 33%;
+}
+
+ .about-header-photo-container{
+    grid-column: 8/ 18;
+    grid-row: 3 / -1;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 50px;
+ }
+
+ .about-header-photo-container img {
+    border-radius: 30px;
+ }
+
+
+ /* REsponsive page about header */
+
+ @media screen and (min-width: 768px) {
+
+    .about-header-photo-container{
+         grid-column: 10/ 14;
+    }
+
+ }
