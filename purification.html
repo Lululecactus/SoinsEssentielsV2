@@ -1,289 +1,459 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purification de Lieux</title>
+    <!-- Fonts Google : Playfair Display SC & Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Purification de Lieux</title>
-  <!-- Fonts Google : Playfair Display SC & Montserrat -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-    rel="stylesheet" />
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Feuille de style principale -->
-  <link rel="stylesheet" href="./style.css" />
+    <!-- script JS  -->
+    <script src="script.js" defer></script>
 
-  <!-- script JS  -->
-  <script src="script.js" defer></script>
+    <!-- FontAwesome 6.6.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- FontAwesome 6.6.0 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="./Images/Mobile/favicon-144x144.png"
+    />
+  </head>
 
-  <!-- Favicon -->
-  <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
-  <meta name="msapplication-TileImage" content="./Images/Mobile/favicon-144x144.png" />
-</head>
-
-<body>
-  <header>
-    <div class="nav-bar">
-      <div class="nav-bar__branding">
-        <a href="./index.html">
-          <img src="./Images/Mobile/lgog1.png" alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours" />
-        </a>
-        <a href="./index.html">
-          <p>Soins Essentiels</p>
-        </a>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="nav-bar__branding">
+          <a href="./index.html">
+            <img
+              src="./Images/Mobile/lgog1.png"
+              alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
+            />
+          </a>
+          <a href="./index.html">
+            <p>Soins Essentiels</p>
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-bar__main-menu">
+            <li><a href="./index.html">Accueil</a></li>
+            <li>
+              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="nav-bar__sub-menu">
+                <li>
+                  <a href="./soin-energetique.html">Soin Énergétique</a>
+                </li>
+                <li>
+                  <a href="./lithotherapie.html">Séance de Lithothérapie</a>
+                </li>
+                <li>
+                  <a href="./massagesonore.html"
+                    >Massage Sonore aux Bols Chantants Tibétains</a
+                  >
+                </li>
+                <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
+                <li>
+                  <a
+                    href="./purification.html"
+                    class="nav-bar__main-menu--active"
+                    >Purification de Lieux</a
+                  >
+                </li>
+                <li><a href="./fengshui.html">Conseils en Feng-Shui</a></li>
+              </ul>
+            </li>
+            <li><a href="./about.html">À propos</a></li>
+            <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
+          </ul>
+          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+        </nav>
       </div>
-      <nav>
-        <ul class="nav-bar__main-menu">
-          <li><a href="./index.html">Accueil</a></li>
-          <li>
-            <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-            <ul class="nav-bar__sub-menu">
-              <li>
-                <a href="./soin-energetique.html">Soin Énergétique</a>
-              </li>
-              <li>
-                <a href="./lithotherapie.html">Séance de Lithothérapie</a>
-              </li>
-              <li>
-                <a href="./massagesonore.html">Massage Sonore aux Bols Chantants Tibétains</a>
-              </li>
-              <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
-              <li>
-                <a href="./purification.html" class="nav-bar__main-menu--active">Purification de Lieux</a>
-              </li>
-              <li><a href="./fengshui.html">Conseils en Feng-Shui</a></li>
-            </ul>
-          </li>
-          <li><a href="./about.html">À propos</a></li>
-          <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
-        </ul>
-        <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-      </nav>
-    </div>
 
-    <div class="soins-hero-banner">
-      <picture>
-        <source srcset="./Images/Desktop/purificationherobanner.webp" media="(min-width: 768px)" type="image/webp" />
-        <source srcset="./Images/Mobile/purificationherobanner.webp" type="image/webp" />
-        <img src="./Images/Mobile/purificationherobanner.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-      </picture>
-
-      <h1 class="soins-hero-banner-title">Purification de Lieux</h1>
-      <div class="soins-wave-overlay"></div>
-    </div>
-  </header>
-  <section class="soins-section1">
-    <h2>À la découverte de la Purification de Lieux</h2>
-    <div class="soins-section1-content">
-      <div class="soins-section1-body">
-        <p>
-          La purification de lieux est un processus visant à améliorer
-          l’ambiance d’un espace en éliminant les énergies stagnantes ou
-          perturbatrices. Cette pratique aide à créer un environnement plus
-          harmonieux et agréable, propice à la détente et à la concentration.
-          Elle peut être effectuée dans divers types de lieux, comme des
-          maisons, des bureaux, ou tout autre espace de vie. 
-        </p>
-      </div>
-      <div class="soins-section1-image">
+      <div class="soins-hero-banner">
         <picture>
-          <source srcset="./Images/Desktop/purificationsection1.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationsection1.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationsection1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
+          <source
+            srcset="./Images/Desktop/purificationherobanner.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./Images/Mobile/purificationherobanner.webp"
+            type="image/webp"
+          />
+          <img
+            src="./Images/Mobile/purificationherobanner.webp"
+            alt="Marilyn Kulpa soin énergétique La Riche"
+          />
         </picture>
+
+        <h1 class="soins-hero-banner-title">Purification de Lieux</h1>
+        <div class="soins-wave-overlay"></div>
       </div>
-    </div>
-    <picture class="section1__flower">
-      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
-      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
-    </picture>
-    <div class="soins-wave-overlay soins-wave-section1"></div>
-  </section>
-  <section class="soins-section2">
-    <h2>les Bienfaits !</h2>
-    <div class="soins-section2-content">
-      <div class="soins-section2-body">
-        <div class="soins-section2-text">
+    </header>
+    <section class="soins-section1">
+      <h2>À la découverte de la Purification de Lieux</h2>
+      <div class="soins-section1-content">
+        <div class="soins-section1-body">
+          <p>
+            La purification de lieux est un processus visant à améliorer
+            l’ambiance d’un espace en éliminant les énergies stagnantes ou
+            perturbatrices. Cette pratique aide à créer un environnement plus
+            harmonieux et agréable, propice à la détente et à la concentration.
+            Elle peut être effectuée dans divers types de lieux, comme des
+            maisons, des bureaux, ou tout autre espace de vie. 
+          </p>
+        </div>
+        <div class="soins-section1-image">
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationsection1.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationsection1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationsection1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+      <picture class="section1__flower">
+        <source
+          srcset="./Images/Desktop/fleurssection1.png"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./Images/Mobile/flowersection1mobile.png"
+          type="image/webp"
+        />
+        <img
+          src="./Images/Mobile/flowersection1mobile.png"
+          alt="Motif floral Soins Essentiels"
+        />
+      </picture>
+      <div class="soins-wave-overlay soins-wave-section1"></div>
+    </section>
+    <section class="soins-section2">
+      <h2>les Bienfaits !</h2>
+      <div class="soins-section2-content">
+        <div class="soins-section2-body">
+          <div class="soins-section2-text">
+            <ul>
+              <li>Dissipation des énergies lourdes et stagnantes</li>
+              <li>Création d'un espace serein et harmonieux</li>
+              <li>Amélioration de l'ambiance et du bien-être global</li>
+              <li>Favorise la concentration, le repos ou la créativité</li>
+              <li>Renforcement du lien avec son lieu de vie ou de travail</li>
+            </ul>
+          </div>
+          <div class="soins-section2-button-wrapper">
+            <a href="./contact-tarifs.html#calendrier" class="button"
+              >Réservez une Séance</a
+            >
+          </div>
+        </div>
+        <div class="soins-section2-gallery">
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationbenefit1.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationbenefit1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationbenefit1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationbenefit2.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationbenefit2.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationbenefit2.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationbenefit3.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationbenefit3.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationbenefit3.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationbenefit4.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationbenefit4.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationbenefit4.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+      <picture class="section2__flower">
+        <source
+          srcset="./Images/Desktop/flowersection2.png"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./Images/Mobile/flowersection2mobile.png"
+          type="image/webp"
+        />
+        <img
+          src="./Images/Mobile/flowersection2mobile.png"
+          alt="Motif floral Soins Essentiels"
+        />
+      </picture>
+      <div class="soins-wave-overlay soins-wave-section2"></div>
+    </section>
+    <section class="soins-section3">
+      <h2>Le Déroulement de la Purification de Lieux</h2>
+      <div class="soins-section3-content">
+        <div class="soins-section3-body">
+          <h3>Échange & Ressenti </h3>
+          <p>
+            La séance commence par un temps d’écoute avec les occupants pour
+            cerner les énergies en présence et les besoins spécifiques du lieu. 
+          </p>
+          <h3>Préparation de l’Espace </h3>
+          <p>
+            L’environnement est allégé et préparé : rangement, ambiance douce,
+            encens ou bougies pour créer un cadre propice à l’harmonisation.
+          </p>
+          <h3>Rituels de Purification </h3>
+          <p>
+            Des outils comme la sauge, les sons, les cristaux ou les encens sont
+            utilisés pour nettoyer, libérer les énergies stagnantes et
+            rééquilibrer l’atmosphère. 
+          </p>
+          <h3>Reconnexion & Circulation </h3>
+          <p>
+            L’énergie du lieu est fluidifiée grâce à des gestes, sons ou
+            intentions qui favorisent la paix, la clarté et la vitalité dans
+            l’espace. 
+          </p>
+          <h3>Clôture & Conseils </h3>
+          <p>
+            On termine par un ressenti global. Des conseils sont partagés pour
+            entretenir une belle énergie au quotidien. 
+          </p>
+        </div>
+        <div class="soins-section3-gallery">
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationgallery1.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationgallery1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationgallery1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/purificationgallery.2.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./Images/Mobile/purificationgallery2.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationgallery2.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture class="span2">
+            <source
+              srcset="./Images/Desktop/purificationgallery.3.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/purificationgallery3.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/purificationgallery3.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+      <picture class="section1__flower">
+        <source
+          srcset="./Images/Desktop/fleurssection1.png"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./Images/Mobile/flowersection1mobile.png"
+          type="image/webp"
+        />
+        <img
+          src="./Images/Mobile/flowersection1mobile.png"
+          alt="Motif floral Soins Essentiels"
+        />
+      </picture>
+      <div class="soins-wave-overlay soins-wave-section1"></div>
+    </section>
+    <section class="soins-section4">
+      <h2>Prenez un moment pour vous</h2>
+      <div class="soins-section4__content">
+        <picture class="soins-section4__image">
+          <source
+            srcset="./Images/Desktop/bols.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source srcset="Images/Mobile/bols.webp" type="image/webp" />
+          <img
+            src="./Images/Mobile/bols.webp"
+            alt="Bols tibétains sonothérapie Soins Essentiels"
+          />
+        </picture>
+        <div class="soins-section4__body">
+          <p>
+            Prêt à retrouver votre équilibre et votre sérénité ? Offrez-vous une
+            pause unique avec notre soin énergétique et laissez-vous guider vers
+            un bien-être profond et revitalisant. Libérez vos tensions,
+            harmonisez votre énergie et retrouvez toute votre vitalité.
+          </p>
+
+          <h3>Tarifs et durée de la séance</h3>
+          <p>
+            Nos séances sont conçues pour s'adapter à chacun : profitez de
+            <span>2 heures</span>
+          </p>
+
           <ul>
-            <li>Dissipation des énergies lourdes et stagnantes</li>
-            <li>Création d'un espace serein et harmonieux</li>
-            <li>Amélioration de l'ambiance et du bien-être global</li>
-            <li>Favorise la concentration, le repos ou la créativité</li>
-            <li>Renforcement du lien avec son lieu de vie ou de travail</li>
+            <li>Tarif : <span>120€</span></li>
+          </ul>
+
+          <p>
+            Prenez soin de vous dès aujourd'hui et réservez votre séance pour
+            vivre une expérience relaxante et revitalisante !
+          </p>
+          <div class="soins-section4__button">
+            <a href="./contact-tarifs.html#calendrier" class="button"
+              >Réservez une Séance</a
+            >
+          </div>
+        </div>
+      </div>
+      <img
+        class="soins-section4__flower-bottom"
+        src="./Images/Desktop/motiffleures.png"
+        alt="Motif floral Soins Essentiels"
+      />
+
+      <img
+        class="soins-section4__flower-top"
+        src="./Images/Desktop/motiffleures.png"
+        alt="Motif floral Soins Essentiels"
+      />
+    </section>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__menu">
+          <h3>Site Menu</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nos Soins</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact et Tarifs</a></li>
+            <li><a href="#">Conditions Générales d’Utilisation</a></li>
+            <li><a href="#">Mentions Légales</a></li>
           </ul>
         </div>
-        <div class="soins-section2-button-wrapper">
-          <a href="./contact-tarifs.html#calendrier" class="button">Réservez une Séance</a>
+        <div class="footer__contact">
+          <h3>Contact</h3>
+          <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
+          <p>
+            Courriel :
+            <a href="mailto:soinsessentiels.fr@gmail.com"
+              >soinsessentiels.fr@gmail.com</a
+            >
+          </p>
+          <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
+          <p>Naviguer vers nous :</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche"
+              >
+                <i class="fas fa-map-location-dot"></i> Google Maps
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche"
+              >
+                <i class="fas fa-map-location-dot"></i> Apple Plans
+              </a>
+            </li>
+            <li>
+              <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
+                <i class="fas fa-map-location-dot"></i> Waze
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="soins-section2-gallery">
-        <picture>
-          <source srcset="./Images/Desktop/purificationbenefit1.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationbenefit1.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationbenefit1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/purificationbenefit2.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationbenefit2.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationbenefit2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/purificationbenefit3.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationbenefit3.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationbenefit3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/purificationbenefit4.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationbenefit4.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationbenefit4.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
+      <div class="footer__copyright">
+        <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
       </div>
-    </div>
-    <picture class="section2__flower">
-      <source srcset="./Images/Desktop/flowersection2.png" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="./Images/Mobile/flowersection2mobile.png" type="image/webp" />
-      <img src="./Images/Mobile/flowersection2mobile.png" alt="Motif floral Soins Essentiels" />
-    </picture>
-    <div class="soins-wave-overlay soins-wave-section2"></div>
-  </section>
-  <section class="soins-section3">
-    <h2>Le Déroulement de la Purification de Lieux</h2>
-    <div class="soins-section3-content">
-      <div class="soins-section3-body">
-        <h3>Échange & Ressenti </h3>
-        <p>
-          La séance commence par un temps d’écoute avec les occupants pour
-          cerner les énergies en présence et les besoins spécifiques du lieu. 
-        </p>
-        <h3>Préparation de l’Espace </h3>
-        <p>
-          L’environnement est allégé et préparé : rangement, ambiance douce,
-          encens ou bougies pour créer un cadre propice à l’harmonisation.
-        </p>
-        <h3>Rituels de Purification </h3>
-        <p>
-          Des outils comme la sauge, les sons, les cristaux ou les encens sont
-          utilisés pour nettoyer, libérer les énergies stagnantes et
-          rééquilibrer l’atmosphère. 
-        </p>
-        <h3>Reconnexion & Circulation </h3>
-        <p>
-          L’énergie du lieu est fluidifiée grâce à des gestes, sons ou
-          intentions qui favorisent la paix, la clarté et la vitalité dans
-          l’espace. 
-        </p>
-        <h3>Clôture & Conseils </h3>
-        <p>
-          On termine par un ressenti global. Des conseils sont partagés pour
-          entretenir une belle énergie au quotidien. 
-        </p>
-      </div>
-      <div class="soins-section3-gallery">
-        <picture>
-          <source srcset="./Images/Desktop/purificationgallery1.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationgallery1.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationgallery1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/purificationgallery.2.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="./Images/Mobile/purificationgallery2.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationgallery2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture class="span2">
-          <source srcset="./Images/Desktop/purificationgallery.3.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/purificationgallery3.webp" type="image/webp" />
-          <img src="./Images/Mobile/purificationgallery3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-      </div>
-    </div>
-    <picture class="section1__flower">
-      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
-      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
-    </picture>
-    <div class="soins-wave-overlay soins-wave-section1"></div>
-  </section>
-  <section class="soins-section4">
-    <h2>Prenez un moment pour vous</h2>
-    <div class="soins-section4__content">
-      <picture class="soins-section4__image">
-        <source srcset="./Images/Desktop/bols.webp" media="(min-width: 768px)" type="image/webp" />
-        <source srcset="Images/Mobile/bols.webp" type="image/webp" />
-        <img src="./Images/Mobile/bols.webp" alt="Bols tibétains sonothérapie Soins Essentiels" />
-      </picture>
-      <div class="soins-section4__body">
-        <p>
-          Prêt pour retrouver votre équilibre et votre sérénité ! Réservez dès
-          maintenant votre séance de soin énergétique et laissez-vous guider
-          vers un bien-être profond et revitalisant. Offrez-vous un moment de
-          détente unique pour libérer vos tensions, harmoniser votre énergie
-          et retrouver toute votre vitalité. Chaque séance est une invitation
-          à vous reconnecter à vous-même et à cultiver un mieux-être durable
-          au quotidien.
-        </p>
-        <div class="soins-section4__button">
-          <a href="#" class="button">En Savoir Plus</a>
-        </div>
-      </div>
-    </div>
-    <img class="soins-section4__flower-bottom" src="./Images/Desktop/motiffleures.png"
-      alt="Motif floral Soins Essentiels" />
-
-    <img class="soins-section4__flower-top" src="./Images/Desktop/motiffleures.png"
-      alt="Motif floral Soins Essentiels" />
-  </section>
-  <footer>
-    <div class="footer__content">
-      <div class="footer__menu">
-        <h3>Site Menu</h3>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Nos Soins</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Contact et Tarifs</a></li>
-          <li><a href="#">Conditions Générales d’Utilisation</a></li>
-          <li><a href="#">Mentions Légales</a></li>
-        </ul>
-      </div>
-      <div class="footer__contact">
-        <h3>Contact</h3>
-        <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
-        <p>
-          Courriel :
-          <a href="mailto:soinsessentiels.fr@gmail.com">soinsessentiels.fr@gmail.com</a>
-        </p>
-        <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
-        <p>Naviguer vers nous :</p>
-        <ul>
-          <li>
-            <a href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche">
-              <i class="fas fa-map-location-dot"></i> Google Maps
-            </a>
-          </li>
-          <li>
-            <a href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche">
-              <i class="fas fa-map-location-dot"></i> Apple Plans
-            </a>
-          </li>
-          <li>
-            <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
-              <i class="fas fa-map-location-dot"></i> Waze
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -1,286 +1,457 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Séance de Lithothérapie</title>
+    <!-- Fonts Google : Playfair Display SC & Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Séance de Lithothérapie</title>
-  <!-- Fonts Google : Playfair Display SC & Montserrat -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-    rel="stylesheet" />
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- script JS  -->
+    <script src="script.js" defer></script>
 
-  <!-- Feuille de style principale -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- script JS  -->
-  <script src="script.js" defer></script>
+    <!-- FontAwesome 6.6.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- FontAwesome 6.6.0 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="./Images/Mobile/favicon-144x144.png"
+    />
+  </head>
 
-  <!-- Favicon -->
-  <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
-  <meta name="msapplication-TileImage" content="./Images/Mobile/favicon-144x144.png" />
-</head>
-
-<body>
-  <header>
-    <div class="nav-bar">
-      <div class="nav-bar__branding">
-        <a href="./index.html">
-          <img src="./Images/Mobile/lgog1.png" alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours" />
-        </a>
-        <a href="./index.html">
-          <p>Soins Essentiels</p>
-        </a>
-      </div>
-      <nav>
-        <ul class="nav-bar__main-menu">
-          <li><a href="./index.html">Accueil</a></li>
-          <li>
-            <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-            <ul class="nav-bar__sub-menu">
-              <li>
-                <a href="./soin-energetique.html">Soin Énergétique</a>
-              </li>
-              <li>
-                <a href="./lithotherapie.html" class="nav-bar__main-menu--active">Séance de Lithothérapie</a>
-              </li>
-              <li>
-                <a href="./massagesonore.html">Massage Sonore aux Bols Chantants Tibétains</a>
-              </li>
-              <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
-              <li><a href="./purification.html">Purification de Lieux</a></li>
-              <li><a href="./fengshui.html">Conseils en Feng-Shui</a></li>
-            </ul>
-          </li>
-          <li><a href="./about.html">À propos</a></li>
-          <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
-        </ul>
-        <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-      </nav>
-    </div>
-
-    <div class="soins-hero-banner">
-      <picture>
-        <source srcset="./Images/Desktop/lithotherapieherobanner.webp" media="(min-width: 768px)" type="image/webp" />
-        <source srcset="./Images/Mobile/lithotherapieherobanner.webp" type="image/webp" />
-        <img src="./Images/Mobile/lithotherapieherobanner.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-      </picture>
-
-      <h1 class="soins-hero-banner-title lithotherapie-title">
-        Séance de Lithothérapie
-      </h1>
-      <div class="soins-wave-overlay"></div>
-    </div>
-  </header>
-  <section class="soins-section1">
-    <h2>À la découverte de la Séance de Lithothérapie</h2>
-    <div class="soins-section1-content">
-      <div class="soins-section1-body">
-        <p>
-          La lithothérapie est une méthode de soin holistique qui utilise les
-          propriétés énergétiques des pierres et cristaux pour harmoniser et
-          équilibrer le corps et l’esprit. Basée sur l’idée que les pierres
-          émettent des vibrations capables d’interagir positivement avec notre
-          propre énergie, la lithothérapie vise à promouvoir l’équilibre et le
-          bien-être global.
-        </p>
-      </div>
-      <div class="soins-section1-image">
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiesection1.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiesection1.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiesection1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-      </div>
-    </div>
-    <picture class="section1__flower">
-      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
-      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
-    </picture>
-    <div class="soins-wave-overlay soins-wave-section1"></div>
-  </section>
-  <section class="soins-section2">
-    <h2>les Bienfaits !</h2>
-    <div class="soins-section2-content">
-      <div class="soins-section2-body">
-        <div class="soins-section2-text">
-          <ul>
-            <li>Favorise le développement personnel</li>
-            <li>Connexion intérieure et ouverture spirituelle</li>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="nav-bar__branding">
+          <a href="./index.html">
+            <img
+              src="./Images/Mobile/lgog1.png"
+              alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
+            />
+          </a>
+          <a href="./index.html">
+            <p>Soins Essentiels</p>
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-bar__main-menu">
+            <li><a href="./index.html">Accueil</a></li>
             <li>
-              Soutien global au bien-être physique, émotionnel et énergétique
+              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="nav-bar__sub-menu">
+                <li>
+                  <a href="./soin-energetique.html">Soin Énergétique</a>
+                </li>
+                <li>
+                  <a
+                    href="./lithotherapie.html"
+                    class="nav-bar__main-menu--active"
+                    >Séance de Lithothérapie</a
+                  >
+                </li>
+                <li>
+                  <a href="./massagesonore.html"
+                    >Massage Sonore aux Bols Chantants Tibétains</a
+                  >
+                </li>
+                <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
+                <li><a href="./purification.html">Purification de Lieux</a></li>
+                <li><a href="./fengshui.html">Conseils en Feng-Shui</a></li>
+              </ul>
             </li>
-            <li>Rééquilibrage des énergies du corps</li>
-            <li>Stimulation de la créativité</li>
+            <li><a href="./about.html">À propos</a></li>
+            <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
+          </ul>
+          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+        </nav>
+      </div>
+
+      <div class="soins-hero-banner">
+        <picture>
+          <source
+            srcset="./Images/Desktop/lithotherapieherobanner.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./Images/Mobile/lithotherapieherobanner.webp"
+            type="image/webp"
+          />
+          <img
+            src="./Images/Mobile/lithotherapieherobanner.webp"
+            alt="Marilyn Kulpa soin énergétique La Riche"
+          />
+        </picture>
+
+        <h1 class="soins-hero-banner-title lithotherapie-title">
+          Séance de Lithothérapie
+        </h1>
+        <div class="soins-wave-overlay"></div>
+      </div>
+    </header>
+    <section class="soins-section1">
+      <h2>À la découverte de la Séance de Lithothérapie</h2>
+      <div class="soins-section1-content">
+        <div class="soins-section1-body">
+          <p>
+            La lithothérapie est une méthode de soin holistique qui utilise les
+            propriétés énergétiques des pierres et cristaux pour harmoniser et
+            équilibrer le corps et l’esprit. Basée sur l’idée que les pierres
+            émettent des vibrations capables d’interagir positivement avec notre
+            propre énergie, la lithothérapie vise à promouvoir l’équilibre et le
+            bien-être global.
+          </p>
+        </div>
+        <div class="soins-section1-image">
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiesection1.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiesection1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiesection1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+      <picture class="section1__flower">
+        <source
+          srcset="./Images/Desktop/fleurssection1.png"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./Images/Mobile/flowersection1mobile.png"
+          type="image/webp"
+        />
+        <img
+          src="./Images/Mobile/flowersection1mobile.png"
+          alt="Motif floral Soins Essentiels"
+        />
+      </picture>
+      <div class="soins-wave-overlay soins-wave-section1"></div>
+    </section>
+    <section class="soins-section2">
+      <h2>les Bienfaits !</h2>
+      <div class="soins-section2-content">
+        <div class="soins-section2-body">
+          <div class="soins-section2-text">
+            <ul>
+              <li>Favorise le développement personnel</li>
+              <li>Connexion intérieure et ouverture spirituelle</li>
+              <li>
+                Soutien global au bien-être physique, émotionnel et énergétique
+              </li>
+              <li>Rééquilibrage des énergies du corps</li>
+              <li>Stimulation de la créativité</li>
+            </ul>
+          </div>
+          <div class="soins-section2-button-wrapper">
+            <a href="./contact-tarifs.html#calendrier" class="button"
+              >Réservez une Séance</a
+            >
+          </div>
+        </div>
+        <div class="soins-section2-gallery">
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiebenefit1.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiebenefit1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiebenefit1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiebenefit2.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiebenefit2.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiebenefit2.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiebenefit3.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiebenefit3.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiebenefit3.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiebenefit4.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiebenefit4.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiebenefit4.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+      <picture class="section2__flower">
+        <source
+          srcset="./Images/Desktop/flowersection2.png"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./Images/Mobile/flowersection2mobile.png"
+          type="image/webp"
+        />
+        <img
+          src="./Images/Mobile/flowersection2mobile.png"
+          alt="Motif floral Soins Essentiels"
+        />
+      </picture>
+      <div class="soins-wave-overlay soins-wave-section2"></div>
+    </section>
+    <section class="soins-section3">
+      <h2>Le Déroulement de votre séance</h2>
+      <div class="soins-section3-content">
+        <div class="soins-section3-body">
+          <h3>Accueil & Intention</h3>
+          <p>
+            La séance commence par un échange pour identifier vos besoins et
+            choisir les pierres les plus adaptées à votre état du moment.
+          </p>
+          <h3>Installation & Détente</h3>
+          <p>
+            Vous vous allongez confortablement dans un espace calme et apaisant.
+            L’ambiance invite à la relaxation : lumière douce, encens, musique
+            selon vos préférences. 
+          </p>
+          <h3>Soin avec les Pierres </h3>
+          <p>
+            Les cristaux sont placés sur ou autour de votre corps, souvent sur
+            les chakras. Chaque pierre agit avec ses propres vibrations pour
+            réharmoniser vos énergies. 
+          </p>
+          <h3>Intégration & Ressenti </h3>
+          <p>
+            Vous restez en relaxation pendant que les pierres diffusent leur
+            énergie. En fin de séance, un temps d’échange vous permet d’exprimer
+            vos ressentis et de recevoir des conseils personnalisés. 
+          </p>
+        </div>
+        <div class="soins-section3-gallery">
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiegallery1.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiegallery1.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiegallery1.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./Images/Desktop/lithotherapiegallery2.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./Images/Mobile/lithotherapiegallery2.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiegallery2.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+          <picture class="span2">
+            <source
+              srcset="./Images/Desktop/lithotherapiegallery3.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Mobile/lithotherapiegallery3.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Mobile/lithotherapiegallery3.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+      </div>
+      <picture class="section1__flower">
+        <source
+          srcset="./Images/Desktop/fleurssection1.png"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./Images/Mobile/flowersection1mobile.png"
+          type="image/webp"
+        />
+        <img
+          src="./Images/Mobile/flowersection1mobile.png"
+          alt="Motif floral Soins Essentiels"
+        />
+      </picture>
+      <div class="soins-wave-overlay soins-wave-section1"></div>
+    </section>
+    <section class="soins-section4">
+      <h2>Prenez un moment pour vous</h2>
+      <div class="soins-section4__content">
+        <picture class="soins-section4__image">
+          <source
+            srcset="./Images/Desktop/bols.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source srcset="Images/Mobile/bols.webp" type="image/webp" />
+          <img
+            src="./Images/Mobile/bols.webp"
+            alt="Bols tibétains sonothérapie Soins Essentiels"
+          />
+        </picture>
+        <div class="soins-section4__body">
+          <p>
+            Prêt à retrouver votre équilibre et votre sérénité ? Offrez-vous une
+            pause unique avec notre soin énergétique et laissez-vous guider vers
+            un bien-être profond et revitalisant. Libérez vos tensions,
+            harmonisez votre énergie et retrouvez toute votre vitalité.
+          </p>
+
+          <h3>Tarifs et durée de la séance</h3>
+          <p>
+            Nos séances sont conçues pour s'adapter à chacun : profitez de
+            <span>1 heure</span> pour les <span>adultes et les enfants.</span>
+          </p>
+
+          <ul>
+            <li>Adulte : <span>50€</span></li>
+            <li>Enfant (jusqu'à 10 ans) : <span>40€</span></li>
+          </ul>
+
+          <p>
+            Prenez soin de vous dès aujourd'hui et réservez votre séance pour
+            vivre une expérience relaxante et revitalisante !
+          </p>
+          <div class="soins-section4__button">
+            <a href="./contact-tarifs.html#calendrier" class="button"
+              >Réservez une Séance</a
+            >
+          </div>
+        </div>
+      </div>
+      <img
+        class="soins-section4__flower-bottom"
+        src="./Images/Desktop/motiffleures.png"
+        alt="Motif floral Soins Essentiels"
+      />
+
+      <img
+        class="soins-section4__flower-top"
+        src="./Images/Desktop/motiffleures.png"
+        alt="Motif floral Soins Essentiels"
+      />
+    </section>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__menu">
+          <h3>Site Menu</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nos Soins</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact et Tarifs</a></li>
+            <li><a href="#">Conditions Générales d’Utilisation</a></li>
+            <li><a href="#">Mentions Légales</a></li>
           </ul>
         </div>
-        <div class="soins-section2-button-wrapper">
-          <a href="./contact-tarifs.html#calendrier" class="button">Réservez une Séance</a>
+        <div class="footer__contact">
+          <h3>Contact</h3>
+          <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
+          <p>
+            Courriel :
+            <a href="mailto:soinsessentiels.fr@gmail.com"
+              >soinsessentiels.fr@gmail.com</a
+            >
+          </p>
+          <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
+          <p>Naviguer vers nous :</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche"
+              >
+                <i class="fas fa-map-location-dot"></i> Google Maps
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche"
+              >
+                <i class="fas fa-map-location-dot"></i> Apple Plans
+              </a>
+            </li>
+            <li>
+              <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
+                <i class="fas fa-map-location-dot"></i> Waze
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="soins-section2-gallery">
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiebenefit1.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiebenefit1.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiebenefit1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiebenefit2.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiebenefit2.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiebenefit2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiebenefit3.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiebenefit3.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiebenefit3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiebenefit4.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiebenefit4.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiebenefit4.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
+      <div class="footer__copyright">
+        <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
       </div>
-    </div>
-    <picture class="section2__flower">
-      <source srcset="./Images/Desktop/flowersection2.png" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="./Images/Mobile/flowersection2mobile.png" type="image/webp" />
-      <img src="./Images/Mobile/flowersection2mobile.png" alt="Motif floral Soins Essentiels" />
-    </picture>
-    <div class="soins-wave-overlay soins-wave-section2"></div>
-  </section>
-  <section class="soins-section3">
-    <h2>Le Déroulement de votre séance</h2>
-    <div class="soins-section3-content">
-      <div class="soins-section3-body">
-        <h3>Accueil & Intention</h3>
-        <p>
-          La séance commence par un échange pour identifier vos besoins et
-          choisir les pierres les plus adaptées à votre état du moment.
-        </p>
-        <h3>Installation & Détente</h3>
-        <p>
-          Vous vous allongez confortablement dans un espace calme et apaisant.
-          L’ambiance invite à la relaxation : lumière douce, encens, musique
-          selon vos préférences. 
-        </p>
-        <h3>Soin avec les Pierres </h3>
-        <p>
-          Les cristaux sont placés sur ou autour de votre corps, souvent sur
-          les chakras. Chaque pierre agit avec ses propres vibrations pour
-          réharmoniser vos énergies. 
-        </p>
-        <h3>Intégration & Ressenti </h3>
-        <p>
-          Vous restez en relaxation pendant que les pierres diffusent leur
-          énergie. En fin de séance, un temps d’échange vous permet d’exprimer
-          vos ressentis et de recevoir des conseils personnalisés. 
-        </p>
-      </div>
-      <div class="soins-section3-gallery">
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiegallery1.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiegallery1.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiegallery1.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture>
-          <source srcset="./Images/Desktop/lithotherapiegallery2.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="./Images/Mobile/lithotherapiegallery2.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiegallery2.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-        <picture class="span2">
-          <source srcset="./Images/Desktop/lithotherapiegallery3.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="Images/Mobile/lithotherapiegallery3.webp" type="image/webp" />
-          <img src="./Images/Mobile/lithotherapiegallery3.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-        </picture>
-      </div>
-    </div>
-    <picture class="section1__flower">
-      <source srcset="./Images/Desktop/fleurssection1.png" media="(min-width: 768px)" type="image/webp" />
-      <source srcset="./Images/Mobile/flowersection1mobile.png" type="image/webp" />
-      <img src="./Images/Mobile/flowersection1mobile.png" alt="Motif floral Soins Essentiels" />
-    </picture>
-    <div class="soins-wave-overlay soins-wave-section1"></div>
-  </section>
-  <section class="soins-section4">
-    <h2>Prenez un moment pour vous</h2>
-    <div class="soins-section4__content">
-      <picture class="soins-section4__image">
-        <source srcset="./Images/Desktop/bols.webp" media="(min-width: 768px)" type="image/webp" />
-        <source srcset="Images/Mobile/bols.webp" type="image/webp" />
-        <img src="./Images/Mobile/bols.webp" alt="Bols tibétains sonothérapie Soins Essentiels" />
-      </picture>
-      <div class="soins-section4__body">
-        <p>
-          Prêt pour retrouver votre équilibre et votre sérénité ! Réservez dès
-          maintenant votre séance de soin énergétique et laissez-vous guider
-          vers un bien-être profond et revitalisant. Offrez-vous un moment de
-          détente unique pour libérer vos tensions, harmoniser votre énergie
-          et retrouver toute votre vitalité. Chaque séance est une invitation
-          à vous reconnecter à vous-même et à cultiver un mieux-être durable
-          au quotidien.
-        </p>
-        <div class="soins-section4__button">
-          <a href="#" class="button">En Savoir Plus</a>
-        </div>
-      </div>
-    </div>
-    <img class="soins-section4__flower-bottom" src="./Images/Desktop/motiffleures.png"
-      alt="Motif floral Soins Essentiels" />
-
-    <img class="soins-section4__flower-top" src="./Images/Desktop/motiffleures.png"
-      alt="Motif floral Soins Essentiels" />
-  </section>
-  <footer>
-    <div class="footer__content">
-      <div class="footer__menu">
-        <h3>Site Menu</h3>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Nos Soins</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Contact et Tarifs</a></li>
-          <li><a href="#">Conditions Générales d’Utilisation</a></li>
-          <li><a href="#">Mentions Légales</a></li>
-        </ul>
-      </div>
-      <div class="footer__contact">
-        <h3>Contact</h3>
-        <p>Téléphone : <a href="tel:0699511828">06.99.51.18.28</a></p>
-        <p>
-          Courriel :
-          <a href="mailto:soinsessentiels.fr@gmail.com">soinsessentiels.fr@gmail.com</a>
-        </p>
-        <p>Adresse : 2 rue Jacques Prévert, 37520 La Riche</p>
-        <p>Naviguer vers nous :</p>
-        <ul>
-          <li>
-            <a href="https://www.google.com/maps/search/?api=1&query=2+rue+Jacques+Prevert,37520+La+Riche">
-              <i class="fas fa-map-location-dot"></i> Google Maps
-            </a>
-          </li>
-          <li>
-            <a href="http://maps.apple.com/?q=2+rue+Jacques+Prevert,37520+La+Riche">
-              <i class="fas fa-map-location-dot"></i> Apple Plans
-            </a>
-          </li>
-          <li>
-            <a href="waze://?q=2+rue+Jacques+Prevert,37520+La+Riche">
-              <i class="fas fa-map-location-dot"></i> Waze
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      <p>&copy; 2025 Soins Essentiels. Tous droits réservés.</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
