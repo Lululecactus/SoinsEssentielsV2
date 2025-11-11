@@ -1696,7 +1696,7 @@ footer {
     position: relative;
     transform: translateY(60%);
     object-fit: cover;
-    object-position: center 70%;
+    object-position: center 65%;
     width: 204px;
     height: 116px;
     border-radius: 50px 19px 50px 0;
