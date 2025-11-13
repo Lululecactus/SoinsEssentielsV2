@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soin Energetique</title>
+    <title>À propos de Marilyn Kulpa</title>
     <!-- Fonts Google : Playfair Display SC & Montserrat -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Feuille de style principale -->
     <link rel="stylesheet" href="./style.css" />
@@ -17,73 +17,244 @@
     <script src="script.js" defer></script>
 
     <!-- FontAwesome 6.6.0 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Favicon -->
     <link rel="icon" href="./Images/Mobile/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="./Images/Mobile/favicon-180x180.png" />
-    <meta name="msapplication-TileImage" content="./Images/Mobile/favicon-144x144.png" />
-</head>
+    <meta
+      name="msapplication-TileImage"
+      content="./Images/Mobile/favicon-144x144.png"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="nav-bar">
-            <div class="nav-bar__branding">
-                <a href="./index.html">
-                    <img src="./Images/Mobile/lgog1.png"
-                        alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours" />
-                </a>
-                <a href="./index.html">
-                    <p>Soins Essentiels</p>
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-bar__main-menu">
-                    <li><a href="./index.html">Accueil</a></li>
-                    <li>
-                        <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="nav-bar__sub-menu">
-                            <li>
-                                <a href="./soin-energetique.html">Soin
-                                    Énergétique</a>
-                            </li>
-                            <li>
-                                <a href="./lithotherapie.html">Séance de Lithothérapie</a>
-                            </li>
-                            <li>
-                                <a href="./massagesonore.html">Massage Sonore aux Bols Chantants Tibétains</a>
-                            </li>
-                            <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
-                            <li><a href="./purification.html">Purification de Lieux</a></li>
-                            <li><a href="./fengshui.html">Conseils en Feng-Shui</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-bar__main-menu--active" href="./about.html">À propos</a></li>
-                    <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
-                </ul>
-                <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-            </nav>
+      <div class="nav-bar">
+        <div class="nav-bar__branding">
+          <a href="./index.html">
+            <img
+              src="./Images/Mobile/lgog1.png"
+              alt="Logo Soins Essentiels Marilyn Kulpa énergéticienne Tours"
+            />
+          </a>
+          <a href="./index.html">
+            <p>Soins Essentiels</p>
+          </a>
         </div>
+        <nav>
+          <ul class="nav-bar__main-menu">
+            <li><a href="./index.html">Accueil</a></li>
+            <li>
+              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="nav-bar__sub-menu">
+                <li>
+                  <a
+                    href="./soin-energetique.html"
+                    class="nav-bar__main-menu--active"
+                    >Soin Énergétique</a
+                  >
+                </li>
+                <li>
+                  <a href="./lithotherapie.html">Séance de Lithothérapie</a>
+                </li>
+                <li>
+                  <a href="./massagesonore.html"
+                    >Massage Sonore aux Bols Chantants Tibétains</a
+                  >
+                </li>
+                <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
+                <li><a href="./purification.html">Purification de Lieux</a></li>
+                <li><a href="./fengshui.html">Consultation Feng-Shui</a></li>
+              </ul>
+            </li>
+            <li><a href="./about.html">À propos</a></li>
+            <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
+          </ul>
+          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+        </nav>
+      </div>
 
-        <div class="soins-hero-banner contact-hero-banner about-hero">
-            <picture>
-                <source srcset="./Images/Desktop/aboutherobanner.webp" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="Images/Mobile/aboutherobanner.webp" type="image/webp" />
-                <img src="./Images/Mobile/aboutherobanner.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-            </picture>
-            <h1 class="soins-hero-banner-title">Votre Thérapeute, Votre Équilibre</h1>
+      <div class="about-hero-banner">
+        <picture class="about-hero-back">
+          <source
+            srcset="./Images/Desktop/aboutherobanner.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="Images/Mobile/aboutherobanner.webp"
+            type="image/webp"
+          />
+          <img
+            src="./Images/Mobile/aboutherobanner.webp"
+            alt="Marilyn Kulpa soin énergétique La Riche"
+          />
+        </picture>
 
-            <div class="about-header-photo-container">
-                <picture>
-                    <source srcset="./Images/Desktop/aboutheader.webp" media="(min-width: 768px)" type="image/webp" />
-                    <source srcset="./Images/Desktop/aboutheader.webp" type="image/webp" />
-                    <img src="./Images/Desktop/aboutheader.webp" alt="Marilyn Kulpa soin énergétique La Riche" />
-                </picture>
+        <picture class="about-hero-selfie">
+          <source
+            srcset="./Images/Desktop/aboutheader.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source srcset="Images/Desktop/aboutheader.webp" type="image/webp" />
+          <img
+            src="./Images/Desktop/aboutheader.webp"
+            alt="Marilyn Kulpa soin énergétique La Riche"
+          />
+        </picture>
 
-            </div>
+        <h1 class="soins-hero-banner-title about-title">
+          À propos de Marilyn Kulpa
+        </h1>
+      </div>
     </header>
-</body>
-
+    <section class="about-section1">
+      <h2>titre de la section obligatoire</h2>
+      <div class="about-section1-content-container">
+        <div class="about-section1-photo-left">
+          <picture>
+            <source
+              srcset="./Images/Desktop/aboutheader.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Desktop/aboutheader.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Desktop/aboutheader.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+        <div class="about-section1-content-card">
+          <p>
+            Je suis Marilyn Kulpa, thérapeute énergéticienne depuis plus de dix
+            ans. Mon parcours est né d’une profonde connexion avec le
+            magnétisme, une énergie naturelle que j’ai appris à ressentir et à
+            transmettre avec respect et authenticité. Chaque séance est pour moi
+            un moment de présence, où j’écoute sans jugement et où je donne le
+            meilleur de moi-même, dans la simplicité du cœur.
+          </p>
+        </div>
+        <div class="about-section1-photo-right">
+          <picture>
+            <source
+              srcset="./Images/Desktop/aboutheader.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Desktop/aboutheader.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Desktop/aboutheader.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+        <div class="about-section1-content-card2">
+          <p>
+            Ma passion pour la lithothérapie s’est développée au fil du temps,
+            guidée par la beauté et la vibration des pierres. Chaque cristal
+            porte une énergie singulière qui invite à l’équilibre et à
+            l’harmonie intérieure. J’accompagne chacun dans la découverte de ces
+            énergies, avec justesse et bienveillance, afin que le soin devienne
+            une expérience unique et personnelle.
+          </p>
+        </div>
+        <div class="about-section1-photo-left">
+          <picture>
+            <source
+              srcset="./Images/Desktop/aboutheader.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Desktop/aboutheader.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Desktop/aboutheader.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+        <div class="about-section1-content-card">
+          <p>
+            Le son est venu enrichir ma pratique : je me suis formée à la
+            Sonothérapie, aux Massages sonores aux bols chantants Tibétains et
+            aux Voyages sonores. Ces outils vibratoires favorisent la détente
+            profonde, la libération des tensions et le recentrage de l’esprit.
+            Le son agit comme une onde bienfaisante, permettant de rétablir une
+            harmonie naturelle et durable.
+          </p>
+        </div>
+        <div class="about-section1-photo-right">
+          <picture>
+            <source
+              srcset="./Images/Desktop/aboutheader.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Desktop/aboutheader.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Desktop/aboutheader.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+        <div class="about-section1-content-card2">
+          <p>
+            Dans la continuité de cette recherche d’équilibre, je me suis
+            également formée à la Consultation Feng Shui et à la Purification de
+            lieux. Ces pratiques permettent d’harmoniser les espaces de vie et
+            d’y instaurer une circulation fluide et paisible de l’énergie, afin
+            que chacun puisse évoluer dans un environnement ressourçant et
+            aligné avec ses aspirations.
+          </p>
+        </div>
+        <div class="about-section1-photo-left">
+          <picture>
+            <source
+              srcset="./Images/Desktop/aboutheader.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="Images/Desktop/aboutheader.webp"
+              type="image/webp"
+            />
+            <img
+              src="./Images/Desktop/aboutheader.webp"
+              alt="Marilyn Kulpa soin énergétique La Riche"
+            />
+          </picture>
+        </div>
+        <div class="about-section1-content-card">
+          <p>
+            Aujourd’hui, mon approche repose sur trois valeurs essentielles :
+            l’écoute, la justesse et la bienveillance. Je crois profondément que
+            chaque personne possède en elle les ressources nécessaires pour
+            retrouver son équilibre. Mon rôle est d’accompagner avec respect,
+            dans la clarté et la sincérité, afin que chaque séance soit un
+            moment de paix, d’harmonie et de reconnexion à soi.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
