@@ -10,7 +10,7 @@
 
     <meta
       name="description"
-      content=" Mentions Légales Conditions Générales d’Utilisation et Politique de Confidentialité du site Soins Essentiels de Marilyn Kulpa, énergéticienne à La Riche, Tours"
+      content="Mentions Légales, Conditions Générales d’Utilisation et Politique de Confidentialité du site Soins Essentiels de Marilyn Kulpa, énergéticienne à La Riche, Tours."
     />
 
     <link rel="canonical" href="https://www.soinsessentiels.fr/legal.html" />
@@ -50,6 +50,7 @@
       name="twitter:image"
       content="https://www.soinsessentiels.fr/Images/Mobile/lgog1.webp"
     />
+
     <!-- ============================================= -->
     <!-- 3. COPIE-COLLE PARTOUT -->
     <!-- ============================================= -->
@@ -94,21 +95,25 @@
 
     <!-- PWA -->
     <meta name="theme-color" content="#DED2C8" />
+
     <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://cdnjs.cloudflare.com"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
-    <link rel="preload" href="./style.css?v=1.0.9" as="style" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-      as="style"
-    />
+    <!-- plus de preload externe (fonts / fontawesome) -->
 
     <!-- Google Fonts async -->
     <link
@@ -116,7 +121,7 @@
       rel="stylesheet"
       media="print"
       onload="this.media='all'"
-      crossorigin
+      crossorigin="anonymous"
     />
     <noscript>
       <link
@@ -128,14 +133,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css?v=1.0.9" />
 
-    <!-- FontAwesome -->
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      as="style"
-      crossorigin="anonymous"
-    />
-
+    <!-- FontAwesome (sans preload) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -151,15 +149,21 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-      default-src 'self';
-      script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline';
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-      font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-      img-src 'self' data: https:;
-      connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
-      frame-src 'none';
-      object-src 'none';
-    "
+  default-src 'self';
+  script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://assets.calendly.com 'unsafe-inline';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://assets.calendly.com;
+  font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://assets.calendly.com;
+  img-src 'self' data: https:;
+  connect-src 
+    'self' 
+    https://*.google-analytics.com 
+    https://*.analytics.google.com 
+    https://region1.google-analytics.com 
+    https://*.googletagmanager.com 
+    https://stats.g.doubleclick.net;
+  frame-src https://assets.calendly.com https://calendly.com;
+  object-src 'none';
+"
     />
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -188,10 +192,9 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      // ID GA4 réel
       gtag("config", "G-J4JFXYLK2N", { send_page_view: true });
     </script>
+
     <!-- JSON-LD -->
     <script type="application/ld+json">
       {
@@ -228,6 +231,7 @@
       }
     </script>
   </head>
+
   <body>
     <header>
       <div class="nav-bar">
@@ -296,25 +300,36 @@
 
       <h3>1. Identité de l’éditeur et responsable de publication</h3>
       <ul>
-        <li>Nom / Raison sociale : KULPA Marilyn </li>
+        <li>Nom / Raison sociale : KULPA Marilyn</li>
         <li>Statut juridique : Micro-entreprise</li>
-        <li>Siège social :  2 rue Jacques Prévert 37520 La Riche, FRANCE.</li>
+        <li>Siège social : 2 rue Jacques Prévert 37520 La Riche, FRANCE.</li>
         <li>Numéro SIRET : 931 676 068 00014</li>
         <li>Numéro de TVA intracommunautaire : TVA non applicable </li>
         <li>Capital social : non applicable</li>
-        <li>Téléphone : + 33 6 99 51 18 28 </li>
-        <li>Adresse e-mail : soinsessentiels.fr@gmail.com </li>
-        <li>Directeur de publication :  KULPA Marilyn </li>
-        <li>Délégué à la protection des données (DPO) :  KULPA Marilyn soinsessentiels.fr@gmail.com</li>
+        <li>Téléphone : + 33 6 99 51 18 28</li>
+        <li>Adresse e-mail : soinsessentiels.fr@gmail.com</li>
+        <li>Directeur de publication : KULPA Marilyn </li>
+        <li>
+          Délégué à la protection des données (DPO) : KULPA Marilyn
+          soinsessentiels.fr@gmail.com
+        </li>
       </ul>
 
       <h3>2. Hébergement</h3>
       <ul>
         <li>Nom de l’hébergeur : Hostinger International Ltd</li>
-        <li>Adresse : 61 Lordou Vironos Street, Lumiel Building, 4ᵉ étage, 6023, Larnaca, Chypre</li>
+        <li>
+          Adresse : 61 Lordou Vironos Street, Lumiel Building, 4ᵉ étage, 6023,
+          Larnaca, Chypre
+        </li>
         <li>Téléphone : +370 645 03378</li>
         <li>RCS et numéro : Registre de Chypre HE 301365]</li>
-        <li>Sauvegarde et disponibilité : Hostinger garantit un taux de disponibilité de 99,9%. Des sauvegardes automatiques hebdomadaires sont réalisées, et des crédits de service peuvent être accordés en cas de non-respect du SLA.</li>
+        <li>
+          Sauvegarde et disponibilité : Hostinger garantit un taux de
+          disponibilité de 99,9%. Des sauvegardes automatiques hebdomadaires
+          sont réalisées, et des crédits de service peuvent être accordés en cas
+          de non-respect du SLA.
+        </li>
       </ul>
 
       <h3>3. Conception et développement technique</h3>
@@ -357,7 +372,10 @@
           Droits : accès, rectification, effacement, limitation, opposition,
           portabilité, retrait du consentement
         </li>
-        <li>Exercice des droits : soinsessentiels.fr@gmail.com ou courrier à 2 rue Jacques Prévert 37520 La Riche, FRANCE.</li>
+        <li>
+          Exercice des droits : soinsessentiels.fr@gmail.com ou courrier à 2 rue
+          Jacques Prévert 37520 La Riche, FRANCE.
+        </li>
       </ul>
 
       <h3>6. Cookies et traceurs</h3>
@@ -389,9 +407,7 @@
       </p>
 
       <h3>9. Droit applicable et juridiction</h3>
-      <p>
-        Droit français. Tribunal compétent : Tours.
-      </p>
+      <p>Droit français. Tribunal compétent : Tours.</p>
 
       <!-- Section II - CGU -->
       <h2>II. Conditions Générales d’Utilisation (CGU)</h2>
@@ -404,8 +420,8 @@
           dépôt d’avis
         </li>
         <li>
-          Praticienne : KULPA Marilyn — prestations : Soin Énergétique, lithothérapie,
-          sonothérapie, purification de lieux, Feng Shui
+          Praticienne : KULPA Marilyn — prestations : Soin Énergétique,
+          lithothérapie, sonothérapie, purification de lieux, Feng Shui
         </li>
       </ul>
 
@@ -435,7 +451,10 @@
       <h3>Article 5 — Tarifs et paiement</h3>
       <ul>
         <li>Tarifs : https://soinsessentiels.fr/contact-tarifs.html</li>
-        <li>Paiement sécurisé via les cartes Visa, Mastercard, Maestro, V Pay, American Express, Diners Club, Discover, Union Pay ainsi que les paiements sans contact via Apple Pay et Google Pay.
+        <li>
+          Paiement sécurisé via les cartes Visa, Mastercard, Maestro, V Pay,
+          American Express, Diners Club, Discover, Union Pay ainsi que les
+          paiements sans contact via Apple Pay et Google Pay.
         </li>
         <li>
           Droit de rétractation : 14 jours pour prestations à distance (article

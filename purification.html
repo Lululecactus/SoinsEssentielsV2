@@ -4,11 +4,11 @@
     <!-- ============================================= -->
     <!-- 1. À MODIFIER SUR CHAQUE PAGE (SEO) -->
     <!-- ============================================= -->
-    <title>Purification de Lieux & Harmonisation Énergétique a Tours</title>
+    <title>Purification de Lieux & Harmonisation Énergétique à Tours</title>
 
     <meta
       name="description"
-      content="purification énergétique avec Marilyn Kulpa. Élimination des énergies stagnantes, harmonisation de l'ambiance ,création d'un environnement serein et revitalisant."
+      content="Purification énergétique avec Marilyn Kulpa. Élimination des énergies stagnantes, harmonisation de l'ambiance et création d'un environnement serein et revitalisant."
     />
 
     <meta
@@ -32,7 +32,7 @@
     />
     <meta
       property="og:image"
-      content="./Images/Desktop/purificationherobanner.webp"
+      content="https://www.soinsessentiels.fr/Images/Desktop/purificationherobanner.webp"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -52,7 +52,7 @@
     />
     <meta
       name="twitter:image"
-      content="./Images/Desktop/purificationherobanner.webp"
+      content="https://www.soinsessentiels.fr/Images/Desktop/purificationherobanner.webp"
     />
 
     <!-- ============================================= -->
@@ -99,21 +99,25 @@
 
     <!-- PWA -->
     <meta name="theme-color" content="#DED2C8" />
+
     <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://cdnjs.cloudflare.com"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
-    <link rel="preload" href="./style.css?v=1.0.9" as="style" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-      as="style"
-    />
+    <!-- ⚠️ plus de preload externe (fonts / fontawesome) pour éviter les warnings -->
 
     <!-- Google Fonts async -->
     <link
@@ -121,7 +125,7 @@
       rel="stylesheet"
       media="print"
       onload="this.media='all'"
-      crossorigin
+      crossorigin="anonymous"
     />
     <noscript>
       <link
@@ -133,14 +137,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css?v=1.0.9" />
 
-    <!-- FontAwesome -->
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      as="style"
-      crossorigin="anonymous"
-    />
-
+    <!-- FontAwesome (sans preload) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -156,15 +153,21 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-      default-src 'self';
-      script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline';
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-      font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-      img-src 'self' data: https:;
-      connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
-      frame-src 'none';
-      object-src 'none';
-    "
+  default-src 'self';
+  script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://assets.calendly.com 'unsafe-inline';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://assets.calendly.com;
+  font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://assets.calendly.com;
+  img-src 'self' data: https:;
+  connect-src 
+    'self' 
+    https://*.google-analytics.com 
+    https://*.analytics.google.com 
+    https://region1.google-analytics.com 
+    https://*.googletagmanager.com 
+    https://stats.g.doubleclick.net;
+  frame-src https://assets.calendly.com https://calendly.com;
+  object-src 'none';
+"
     />
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -197,6 +200,7 @@
       // ID GA4 réel
       gtag("config", "G-J4JFXYLK2N", { send_page_view: true });
     </script>
+
     <!-- JSON-LD -->
     <script type="application/ld+json">
       {
@@ -582,7 +586,10 @@
             </p>
 
             <ul>
-              <li>Tarif : <span>120€.</span> <em> Déplacement inclus jusqu’à 30 km autour de Tours.</em></li>
+              <li>
+                Tarif : <span>120€.</span>
+                <em> Déplacement inclus jusqu’à 30 km autour de Tours.</em>
+              </li>
             </ul>
           </div>
           <div class="contact-paiement">

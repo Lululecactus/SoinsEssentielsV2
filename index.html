@@ -13,12 +13,10 @@
       name="description"
       content="Marilyn Kulpa, énergéticienne à La Riche, Tours : soins énergétiques, lithothérapie, sonothérapie bols tibétains, purification lieux, Feng Shui."
     />
-
     <meta
       name="keywords"
       content="énergéticienne La Riche, soins énergétiques Tours, sonothérapie, lithothérapie, purification énergétique, feng shui Tours, Marilyn Kulpa"
     />
-
     <link rel="canonical" href="https://soinsessentiels.fr" />
 
     <!-- Open Graph -->
@@ -99,29 +97,22 @@
 
     <!-- PWA -->
     <meta name="theme-color" content="#DED2C8" />
-    <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
-    <link rel="preload" href="./style.css?v=1.0.9" as="style" />
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
-      as="style"
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
     />
 
-    <!-- Google Fonts async -->
+    <!-- Google Fonts async (preload supprimé pour éviter le warning) -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap"
       rel="stylesheet"
       media="print"
       onload="this.media='all'"
-      crossorigin
+      crossorigin="anonymous"
     />
     <noscript>
       <link
@@ -130,17 +121,9 @@
       />
     </noscript>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="./style.css?v=1.0.9" />
 
-    <!-- FontAwesome -->
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      as="style"
-      crossorigin="anonymous"
-    />
-
+    <!-- FontAwesome (preload supprimé pour éviter le warning) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -152,21 +135,26 @@
     <!-- JS -->
     <script src="script.js" defer></script>
 
-    <!-- Sécurité (CSP FIXÉE POUR FONTAWESOME) -->
+    <!-- Sécurité (CSP) -->
     <meta
       http-equiv="Content-Security-Policy"
       content="
-      default-src 'self';
-      script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline';
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-      font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-      img-src 'self' data: https:;
-      connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
-      frame-src 'none';
-      object-src 'none';
-    "
+  default-src 'self';
+  script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://assets.calendly.com 'unsafe-inline';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://assets.calendly.com;
+  font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://assets.calendly.com;
+  img-src 'self' data: https:;
+  connect-src 
+    'self' 
+    https://*.google-analytics.com 
+    https://*.analytics.google.com 
+    https://region1.google-analytics.com 
+    https://*.googletagmanager.com 
+    https://stats.g.doubleclick.net;
+  frame-src https://assets.calendly.com https://calendly.com;
+  object-src 'none';
+"
     />
-
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     <meta
@@ -193,10 +181,9 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      // ID GA4 réel
       gtag("config", "G-J4JFXYLK2N", { send_page_view: true });
     </script>
+
     <!-- JSON-LD -->
     <script type="application/ld+json">
       {
@@ -249,31 +236,33 @@
           </a>
         </div>
         <nav>
-    <ul class="nav-bar__main-menu">
-      <li class="nav-bar__main-menu--active">
-        <a href="./index.html">Accueil</a>
-      </li>
-      <li class="nav-bar__has-submenu">
-        <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
-        <ul class="nav-bar__sub-menu">
-          <li><a href="./soin-energetique.html">Soin Énergétique</a></li>
-          <li><a href="./lithotherapie.html">Séance de Lithothérapie</a></li>
-          <li>
-            <a href="./massagesonore.html">
-              Massage Sonore aux Bols Chantants Tibétains
-            </a>
-          </li>
-          <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
-          <li><a href="./purification.html">Purification de Lieux</a></li>
-          <li><a href="./fengshui.html">Consultation Feng-Shui</a></li>
-        </ul>
-      </li>
-      <li><a href="./about.html">À propos</a></li>
-      <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
-    </ul>
+          <ul class="nav-bar__main-menu">
+            <li class="nav-bar__main-menu--active">
+              <a href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-bar__has-submenu">
+              <a href="#">Les Soins <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="nav-bar__sub-menu">
+                <li><a href="./soin-energetique.html">Soin Énergétique</a></li>
+                <li>
+                  <a href="./lithotherapie.html">Séance de Lithothérapie</a>
+                </li>
+                <li>
+                  <a href="./massagesonore.html">
+                    Massage Sonore aux Bols Chantants Tibétains
+                  </a>
+                </li>
+                <li><a href="./voyagesonore.html">Voyage Sonore</a></li>
+                <li><a href="./purification.html">Purification de Lieux</a></li>
+                <li><a href="./fengshui.html">Consultation Feng-Shui</a></li>
+              </ul>
+            </li>
+            <li><a href="./about.html">À propos</a></li>
+            <li><a href="./contact-tarifs.html">Contact & Tarifs</a></li>
+          </ul>
 
-    <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
-  </nav>
+          <i class="nav-bar__mobile-menu fa-solid fa-bars" id="burger-menu"></i>
+        </nav>
       </div>
       <div class="hero-banner">
         <div class="hero-banner__title">
