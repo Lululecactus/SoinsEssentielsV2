@@ -68,6 +68,8 @@ h2 {
 
 /* NAV BAR */
 
+/* NAV BAR */
+
 .nav-bar {
     max-width: 1440px;
     display: flex;
@@ -178,6 +180,7 @@ h2 {
 .nav-bar__main-menu li:hover .nav-bar__sub-menu {
     display: flex;
 }
+
 
 .hero-banner {
     position: relative;
@@ -311,6 +314,7 @@ h2 {
 }
 
 /* general responsive  */
+
 @media screen and (min-width: 768px) {
     .hero-banner__title {
 
