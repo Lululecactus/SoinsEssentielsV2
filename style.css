@@ -1689,11 +1689,35 @@ footer {
     padding: 150px 25px 50px 25px;
     margin: 15px;
     z-index: 2;
+}
+
+.soins-section4-tarifs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    padding-top: 2em;
 
 }
 
-.soins-section4__body p {
-    padding: 1.5em 0;
+.soins-section4-tarifs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-top: 1px solid #145A32;
+}
+
+.soins-section4-tarifs p {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.soins-section4-tarifs-list{
+    margin-bottom: 1.9em;
 }
 
 .soins-section4__image img {
@@ -2090,6 +2114,42 @@ footer {
 
 /* contact section contact  */
 
+.contact-paiement {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    padding: 2em 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-paiement::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-top: 1px solid #145A32;
+}
+
+.contact-paiement::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* place en bas de la div */
+    left: 50%;
+    /* commence au centre */
+    transform: translateX(-50%);
+    /* centre parfaitement l'élément */
+    width: 50%;
+    /* moitié de la largeur de la div */
+    border-bottom: 1px solid #145A32;
+    /* border en bas */
+}
+
+
 .contact-section-contact {
     background-color: #F4E5DB;
 
@@ -2457,9 +2517,10 @@ footer {
 
 
 /* style page mention legal */
-.legal h1{
+.legal h1 {
     margin-top: 8vh;
 }
+
 .legal h3 {
     margin-top: 1.7em;
     margin-bottom: 1em;
@@ -2467,15 +2528,8 @@ footer {
     font-weight: 600;
 }
 
-.legal{
+.legal {
     padding: 25px;
     background-color: #FAFAFA;
     color: #000;
-}
-
-/* mode de paiement */
-.mode-pay{
-    margin-top: 3em;
-    padding-top: 1em;
-    border-top: 1px solid black;
 }
