@@ -2468,3 +2468,10 @@ footer {
     background-color: #FAFAFA;
     color: #000;
 }
+
+/* mode de paiement */
+.mode-pay{
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid black;
+}
