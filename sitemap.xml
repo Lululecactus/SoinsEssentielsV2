@@ -10,58 +10,58 @@
 
   <!-- Contact + Tarifs -->
   <url>
-    <loc>https://soinsessentiels.fr/contact-tarifs.html</loc>
+    <loc>https://soinsessentiels.fr/contact-tarifs</loc>
     <priority>0.90</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- À propos -->
   <url>
-    <loc>https://soinsessentiels.fr/about.html</loc>
+    <loc>https://soinsessentiels.fr/about</loc>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Mentions légales / CGU -->
   <url>
-    <loc>https://soinsessentiels.fr/legal.html</loc>
+    <loc>https://soinsessentiels.fr/legal</loc>
     <priority>0.60</priority>
     <changefreq>yearly</changefreq>
   </url>
 
   <!-- Soins -->
   <url>
-    <loc>https://soinsessentiels.fr/soin-energetique.html</loc>
+    <loc>https://soinsessentiels.fr/soin-energetique</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://soinsessentiels.fr/lithotherapie.html</loc>
+    <loc>https://soinsessentiels.fr/lithotherapie</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://soinsessentiels.fr/massagesonore.html</loc>
+    <loc>https://soinsessentiels.fr/massagesonore</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://soinsessentiels.fr/voyagesonore.html</loc>
+    <loc>https://soinsessentiels.fr/voyagesonore</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://soinsessentiels.fr/purification.html</loc>
+    <loc>https://soinsessentiels.fr/purification</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://soinsessentiels.fr/fengshui.html</loc>
+    <loc>https://soinsessentiels.fr/fengshui</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
