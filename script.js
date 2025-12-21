@@ -35,18 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
   if (section1Image) {
     observeElement(section1Image, "in-view", {
       threshold: 0.1,
-      rootMargin: "0px 0px -250px 0px"
+      rootMargin: "0px 0px -250px 0px",
     });
   }
 
   // --- Galeries section 2 et 3 ---
-  const gallerySections = document.querySelectorAll(".soins-section2, .soins-section3");
+  const gallerySections = document.querySelectorAll(
+    ".soins-section2, .soins-section3"
+  );
   gallerySections.forEach((section) => {
-    const pics = section.querySelectorAll(".soins-section2-gallery picture, .soins-section3-gallery picture");
+    const pics = section.querySelectorAll(
+      ".soins-section2-gallery picture, .soins-section3-gallery picture"
+    );
     pics.forEach((pic) => {
       observeElement(pic, "in-view", {
         threshold: 0.5,
-        rootMargin: "0px 0px -50px 0px"
+        rootMargin: "0px 0px -50px 0px",
       });
     });
   });
@@ -114,4 +118,49 @@ document.addEventListener("DOMContentLoaded", () => {
       true // capture, pour être sûr de l'intercepter avant
     );
   }
+});
+
+// cookie-consent.js 
+
+
+function loadGoogleAnalytics() {
+  // Chargement dynamique du script gtag
+  const gtagScript = document.createElement('script');
+  gtagScript.async = true;
+  gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-J4JFXYLK2N';
+  document.head.appendChild(gtagScript);
+
+  // Configuration GA4
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-J4JFXYLK2N', {
+    send_page_view: true,
+    anonymize_ip: true  // Recommandé pour RGPD
+  });
+}
+
+// Récupère le consentement déjà donné (ou non)
+const consent = localStorage.getItem('cookieConsent');
+const modal = document.getElementById('cookie-modal');
+
+if (!consent) {
+  // Première visite → affiche la modale
+  modal.classList.add('show');
+} else if (consent === 'accepted') {
+  // Consentement déjà accepté → charge GA immédiatement
+  loadGoogleAnalytics();
+}
+
+// Bouton "Tout accepter"
+document.getElementById('cookie-accept-all')?.addEventListener('click', () => {
+  localStorage.setItem('cookieConsent', 'accepted');
+  loadGoogleAnalytics();
+  modal.classList.remove('show');
+});
+
+// Bouton "Tout refuser"
+document.getElementById('cookie-reject-all')?.addEventListener('click', () => {
+  localStorage.setItem('cookieConsent', 'rejected');
+  modal.classList.remove('show');
 });

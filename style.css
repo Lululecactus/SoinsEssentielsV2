@@ -1214,7 +1214,7 @@ footer {
     content: '';
     position: absolute;
     top: 0;
-    left: -50;
+    left: -50px;
     width: 50%;
     height: 100%;
     background: linear-gradient(120deg,
@@ -1716,7 +1716,7 @@ footer {
     margin-top: 1em;
 }
 
-.soins-section4-tarifs-list{
+.soins-section4-tarifs-list {
     margin-bottom: 1.9em;
 }
 
@@ -2532,4 +2532,138 @@ footer {
     padding: 25px;
     background-color: #FAFAFA;
     color: #000;
+}
+
+/* Modal Cookie - Version finale ultra-douce, texte à gauche, boutons centrés */
+.cookie-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;
+    /* Position en bas */
+    justify-content: center;
+    padding-bottom: 30px;
+    /* Distance du bas de l'écran */
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    pointer-events: none;
+}
+
+.cookie-modal.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cookie-modal-content {
+    background: #EBCFBD;
+    /* Beige-rosé chaleureux */
+    padding: 30px 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    max-width: 720px;
+    width: 90%;
+    color: #000;
+    animation: slideUp 1.5s ease-in-out;
+    pointer-events: auto;
+    /* La modale elle-même reste cliquable */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* Texte principal et lien alignés à gauche (plus élégant) */
+.cookie-modal-content p {
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.cookie-link a {
+    text-decoration: underline;
+}
+
+/* Boutons centrés horizontalement */
+.cookie-buttons-centered {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cookie-buttons-centered button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    border: none;
+}
+
+/* Bouton Accepter - Vert forêt (positif, incitatif) */
+.btn-accept {
+    background: #145A32;
+    color: #fff;
+}
+
+.btn-accept:hover {
+    background: #0e4424;
+    transform: translateY(-2px);
+}
+
+.btn-accept:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 4px 8px rgba(0, 0, 0, 0.3), inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    background-color: #0e4424;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Bouton Refuser - Orange terracotta (chaleureux mais moins "go") */
+.btn-reject {
+    background: #d17a2e;
+    color: white;
+}
+
+.btn-reject:hover {
+    background: #c56a1e;
+    transform: translateY(-2px);
+}
+
+.btn-reject:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 4px 8px rgba(0, 0, 0, 0.3), inset -2px -4px 8px rgba(255, 255, 255, 0.2);
+    background-color: #c56a1e;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+    .cookie-modal-content {
+        padding: 25px;
+        margin: 0 20px;
+    }
+
+    .cookie-buttons-centered {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cookie-buttons-centered button {
+        width: 80%;
+        max-width: 300px;
+    }
 }
