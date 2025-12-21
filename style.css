@@ -2534,6 +2534,98 @@ footer {
     color: #000;
 }
 
+/* ====================== TABLEAUX - STYLE PROPRE & CHALEUREUX ====================== */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    /* Pour que les coins arrondis s'appliquent correctement */
+}
+
+thead th {
+    background-color: #EBCFBD;
+    /* Beige-rosé chaleureux comme votre bandeau cookie */
+    color: #000000;
+    text-align: left;
+    font-weight: 600;
+    padding: 16px 20px;
+    font-size: 16px;
+}
+
+tbody td {
+    padding: 14px 20px;
+    border-top: 1px solid #f0e0d8;
+    /* Ligne subtile dans les tons chauds */
+    vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f2ef;
+    /* Alternance très légère pour lisibilité */
+}
+
+tbody tr:hover {
+    background-color: #f5e4dc;
+    /* Hover doux dans les tons de votre identité */
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive : empiler les colonnes sur petits écrans */
+@media (max-width: 680px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #e0c7b8;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: 600;
+        text-align: left;
+        color: #145A32;
+        /* Vert forêt pour les libellés */
+    }
+}
+
+/* Ajoutez cet attribut data-label dans votre HTML pour le mode mobile */
+
+
 /* Modal Cookie - Version finale ultra-douce, texte à gauche, boutons centrés */
 .cookie-modal {
     display: none;
