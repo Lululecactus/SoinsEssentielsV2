@@ -93,8 +93,8 @@ h2 {
 }
 
 .nav-bar__branding img {
-    width: 50px;
-    height: 40px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
@@ -1204,6 +1204,15 @@ footer {
     -webkit-backdrop-filter: blur(14px);
 }
 
+.animal-title{
+    margin-top: 6vh;
+    color: #fff;
+}
+.animal-hero-banner img {
+    object-position: 50% 0%;
+    transform: translateY(50px);
+}
+
 .voyage-sonore-title {
     color: #fff;
 }
@@ -1259,9 +1268,19 @@ footer {
     .soins-hero-banner {
         grid-template-rows: 70vh;
     }
+    .animal-hero-banner img {
+        object-position: 50% 62%;
+        transform: translateY(10px);
+}
 
     .lithotherapie-title {
         color: #fff;
+    }
+}
+@media screen and (min-width: 520px) and (max-width: 767px) {
+    .animal-hero-banner img {
+        object-position: 50% 62%;
+        transform: translateY(10px);
     }
 }
 
@@ -1471,6 +1490,15 @@ footer {
     justify-content: center;
     align-items: center;
     flex: 9;
+}
+
+.animal-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-benefits {
+    text-align: center;
 }
 
 .soins-section2-button-wrapper {

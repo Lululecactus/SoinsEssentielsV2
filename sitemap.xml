@@ -66,4 +66,10 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <url>
+    <loc>https://soinsessentiels.fr/animal</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+
+
 </urlset>
