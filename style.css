@@ -93,8 +93,8 @@ h2 {
 }
 
 .nav-bar__branding img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
@@ -1193,7 +1193,7 @@ footer {
     z-index: 2;
     justify-self: center;
     align-self: self-start;
-    margin-top: 1.5vh;
+    margin-top: 3.3vh;
     text-align: center;
     font-size: 2em;
     width: 100%;
@@ -1205,12 +1205,10 @@ footer {
 }
 
 .animal-title{
-    margin-top: 6vh;
     color: #fff;
 }
 .animal-hero-banner img {
     object-position: 50% 0%;
-    transform: translateY(50px);
 }
 
 .voyage-sonore-title {
