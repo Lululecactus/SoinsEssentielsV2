@@ -1,4 +1,18 @@
+# ============================================
+# robots.txt — soinsessentiels.fr
+# Mise à jour : 2026-05-17
+# ============================================
+
 User-agent: *
 Allow: /
 
+# Sécurité : Bloquer l'exploration des dossiers sensibles ou techniques
+Disallow: /config/
+Disallow: /vendor/
+Disallow: /backup/
+Disallow: /backups/
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemap
 Sitemap: https://soinsessentiels.fr/sitemap.xml

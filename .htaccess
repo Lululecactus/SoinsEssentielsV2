@@ -1,40 +1,136 @@
+# ============================================
+# .htaccess — soinsessentiels.fr
+# Mise à jour : 2026-05-17
+# ============================================
+
+Options -Indexes
+Options -MultiViews
+
 # Activer le moteur de réécriture
 RewriteEngine On
 
 ############################################
-# 1. Rediriger /page.html vers /page (SEO friendly)
+# 1. Forcer HTTPS
 ############################################
-RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
-RewriteRule ^ %1 [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ############################################
-# 2. Quand on tape /page, servir page.html
+# 2. Supprimer le www (canonical sans www)
+############################################
+RewriteCond %{HTTP_HOST} ^www\.soinsessentiels\.fr [NC]
+RewriteRule ^ https://soinsessentiels.fr%{REQUEST_URI} [R=301,L]
+
+############################################
+# 3. Rediriger /page.html vers /page (SEO friendly)
+############################################
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+############################################
+# 4. Quand on tape /page, servir page.html
 ############################################
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^/]+)/?$ $1.html [L]
 
 ############################################
-# 3. Page d'accueil
+# 5. Page d'accueil
 ############################################
 DirectoryIndex index.html
 
 ############################################
-# 4. Compression GZIP (si activée sur le serveur)
+# 6. Page d'erreur 404 personnalisée
+############################################
+ErrorDocument 404 /index.html
+
+############################################
+# 7. Compression GZIP
 ############################################
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml font/woff font/woff2
 </IfModule>
 
 ############################################
-# 5. Cache navigateur basique pour les assets
+# 8. Cache navigateur
 ############################################
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType text/css "access plus 7 days"
-  ExpiresByType application/javascript "access plus 7 days"
-  ExpiresByType image/jpeg "access plus 30 days"
-  ExpiresByType image/png "access plus 30 days"
-  ExpiresByType image/gif "access plus 30 days"
-  ExpiresByType image/svg+xml "access plus 30 days"
+
+  # HTML — court pour refléter les mises à jour
+  ExpiresByType text/html                 "access plus 1 hour"
+
+  # CSS & JS
+  ExpiresByType text/css                  "access plus 7 days"
+  ExpiresByType application/javascript    "access plus 7 days"
+  ExpiresByType text/javascript           "access plus 7 days"
+
+  # Images
+  ExpiresByType image/jpeg                "access plus 30 days"
+  ExpiresByType image/png                 "access plus 30 days"
+  ExpiresByType image/gif                 "access plus 30 days"
+  ExpiresByType image/svg+xml             "access plus 30 days"
+  ExpiresByType image/webp                "access plus 30 days"
+  ExpiresByType image/x-icon              "access plus 1 year"
+
+  # Polices
+  ExpiresByType font/woff                 "access plus 1 year"
+  ExpiresByType font/woff2                "access plus 1 year"
+  ExpiresByType application/font-woff     "access plus 1 year"
+  ExpiresByType application/font-woff2    "access plus 1 year"
+
+  # Sitemap & robots
+  ExpiresByType application/xml           "access plus 1 day"
+  ExpiresByType text/plain                "access plus 1 day"
 </IfModule>
+
+############################################
+# 9. En-têtes de sécurité HTTP
+############################################
+<IfModule mod_headers.c>
+
+  # Empêche le clickjacking (intégration dans une iframe tierce)
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Empêche le sniffing de type MIME
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Active le filtre XSS du navigateur
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Politique de référent stricte
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions — désactive les API sensibles inutiles
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+
+  # HSTS — force HTTPS pendant 1 an, inclut les sous-domaines
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Supprime la signature du serveur Apache
+  Header unset Server
+  Header unset X-Powered-By
+
+  # Cache-Control sur les assets statiques (complète mod_expires)
+  <FilesMatch "\.(css|js|webp|jpg|jpeg|png|gif|svg|ico|woff|woff2)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+
+  # Pas de cache sur le HTML
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+</IfModule>
+
+############################################
+# 10. Bloquer l'accès aux fichiers sensibles
+############################################
+<FilesMatch "(^\.htaccess|^\.htpasswd|^\.env|^\.git|composer\.json|composer\.lock|package\.json|package-lock\.json)$">
+  Require all denied
+</FilesMatch>
+
+############################################
+# 11. Désactiver l'affichage de la signature Apache
+############################################
+ServerSignature Off

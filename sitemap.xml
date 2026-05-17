@@ -4,6 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://soinsessentiels.fr/</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>1.00</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -11,6 +12,7 @@
   <!-- Contact + Tarifs -->
   <url>
     <loc>https://soinsessentiels.fr/contact-tarifs</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.90</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -18,58 +20,67 @@
   <!-- À propos -->
   <url>
     <loc>https://soinsessentiels.fr/about</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
-  </url>
-
-  <!-- Mentions légales / CGU -->
-  <url>
-    <loc>https://soinsessentiels.fr/legal</loc>
-    <priority>0.60</priority>
-    <changefreq>yearly</changefreq>
   </url>
 
   <!-- Soins -->
   <url>
     <loc>https://soinsessentiels.fr/soin-energetique</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://soinsessentiels.fr/lithotherapie</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://soinsessentiels.fr/massagesonore</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://soinsessentiels.fr/voyagesonore</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://soinsessentiels.fr/purification</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://soinsessentiels.fr/fengshui</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://soinsessentiels.fr/animal</loc>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
+  </url>
 
+  <!-- Mentions légales — priorité basse, changefreq yearly -->
+  <url>
+    <loc>https://soinsessentiels.fr/legal</loc>
+    <lastmod>2025-12-21</lastmod>
+    <priority>0.10</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 
 </urlset>
